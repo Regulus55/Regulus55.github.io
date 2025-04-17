@@ -7,5 +7,4 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Project from "./Project";
 
-
 export { Home, HeroSection, NotFound, Profile, AboutMe, Skills, Project };
