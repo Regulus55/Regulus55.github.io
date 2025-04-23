@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="relative">
       <ParallaxWrapper>
-        <div className="flex flex-col justify-center items-center mt-8 gap-8 text-white">
+        <div className="flex flex-col justify-center items-center gap-8 text-white">
           <Profile />
           <AboutMe />
           <Skills />

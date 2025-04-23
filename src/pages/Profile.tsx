@@ -1,5 +1,10 @@
 import { ProfileData, ProfileIcon } from "../data/ProfileData";
 
+type IconProps = {
+  size?: number;
+  className?: string;
+};
+
 const Profile = () => {
   return (
     <div className="flex flex-col items-start justify-center w-full w-full max-w-7xl h-full p-10 rounded-3xl mt-40">
@@ -7,15 +12,14 @@ const Profile = () => {
         className="text-7xl font-bold text-white ml-8 mb-4"
         style={{
           color: "white",
-          WebkitTextStroke: "2px gray",
-          textShadow: "5px 5px 5px rgba(0, 0, 0, 1)",
+          textShadow: "6px 6px #757575",
         }}
       >
         PROFILE
       </h1>
       <div
-        className="flex items-center justify-start w-full p-8 rounded-3xl"
-        style={{ backgroundColor: "rgba(117, 117, 117, 0.43)" }}
+        className="flex items-center justify-start w-auto p-8 rounded-3xl"
+        style={{ backgroundColor: "#333354" }}
       >
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
           <img
@@ -26,15 +30,12 @@ const Profile = () => {
         </div>
         <div>
           <div className={"flex flex-col items-left justify-center text-3xl"}>
-            {Object.entries(ProfileData).map(([key, value]) => {
-              const Icon = ProfileIcon[key];
+          {Object.entries(ProfileData).map(([key, value]) => {
+              const Icon = ProfileIcon[key] as React.ComponentType<IconProps>
 
               return (
-                <div
-                  key={key}
-                  className="flex items-center gap-2 mb-2 text-white"
-                >
-                  {typeof Icon === "function" && <Icon size={24} />}
+                <div key={key} className="flex items-center gap-2 mb-2 text-white">
+                <Icon size={24} className="mr-4"/>
                   <span>{value}</span>
                 </div>
               );
