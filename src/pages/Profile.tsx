@@ -11,7 +11,6 @@ const Profile = () => {
       <h1
         className="text-7xl font-bold text-white ml-8 mb-4"
         style={{
-          color: "white",
           textShadow: "6px 6px #757575",
         }}
       >
