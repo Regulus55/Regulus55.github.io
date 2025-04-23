@@ -9,10 +9,10 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
         <HeroSection />
       </section>
 
-      <div className="relative h-[700vh]">
+      <div className="relative h-[800vh]">
         <div className="absolute inset-0 z-10 overflow-hidden">
           <Parallax speed={0}>
-            <div className="w-full h-[700vh] flex justify-center overflow-hidden">
+            <div className="w-full h-[800vh] flex justify-center overflow-hidden">
               <div
                 className="w-full h-full"
                 style={{
