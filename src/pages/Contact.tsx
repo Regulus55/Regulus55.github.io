@@ -9,7 +9,7 @@ const Contact = () => {
   const EmailIcon = ProfileIcon.email as React.ComponentType<IconBaseProps>;
 
   return (
-    <div className="flex flex-col items-center justify-center w-full w-full max-w-7xl h-full p-10 rounded-3xl mt-40">
+    <div className="flex flex-col items-center justify-center w-full w-full max-w-7xl h-full p-10 rounded-3xl">
       <h1
         className="text-7xl font-bold text-white  mb-4"
         style={{
