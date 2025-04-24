@@ -2,7 +2,7 @@ import { AboutMeData } from "../data";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-start justify-center w-full w-full max-w-7xl h-full p-10 rounded-3xl">
+    <div className="relative flex flex-col items-start justify-center w-full max-w-7xl h-full p-10 rounded-3xl">
       <h1 className="text-7xl font-bold text-white ml-8 mb-4"
         style={{
           color: "white",
