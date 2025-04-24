@@ -19,8 +19,8 @@ const Contact = () => {
         CONTACT
       </h1>
 
-      <div className="flex items-center gap-4 text-xl"><PhoneIcon /> {ProfileData.phone}</div>
-      <div className="flex items-center gap-4 text-xl"><EmailIcon /> {ProfileData.email}</div>
+      <div className="flex items-center gap-4 text-xl"><PhoneIcon /> {ProfileData[1].value}</div>
+      <div className="flex items-center gap-4 text-xl"><EmailIcon /> {ProfileData[4].value}</div>
     </div>
   );
 };

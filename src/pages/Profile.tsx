@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../data/ProfileData";
 
 type IconProps = {
@@ -29,16 +30,48 @@ const Profile = () => {
         </div>
         <div>
           <div className={"flex flex-col items-left justify-center text-3xl"}>
-          {Object.entries(ProfileData).map(([key, value]) => {
+            {ProfileData.map(({ key, value, type }) => {
               const Icon = ProfileIcon[key] as React.ComponentType<IconProps>
+
+              const handleClick = () => {
+                if (type === "copy") {
+                  navigator.clipboard.writeText(value);
+                  toast.success("이메일이 클립보드에 복사되었습니다!");
+                }
+              };
+
+              let content: React.ReactNode;
+
+              if (type === "url") {
+                content = (
+                  <a
+                    href={`https://${value}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    {value}
+                  </a>
+                );
+              } else if (type === "copy") {
+                content = (
+                  <button onClick={handleClick} className="hover:underline">
+                    {value}
+                  </button>
+                );
+              } else {
+                content = <span>{value}</span>;
+              }
 
               return (
                 <div key={key} className="flex items-center gap-2 mb-2 text-white">
-                <Icon size={24} className="mr-4"/>
-                  <span>{value}</span>
+                  {Icon && <Icon size={24} className="mr-4" />} 
+                  {content}
                 </div>
               );
             })}
+
+
           </div>
         </div>
       </div>

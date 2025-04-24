@@ -22,9 +22,9 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center gap-60 text-white">
           {section.map(({ id, component, direction }) => (
             <div className="w-full max-w-7xl">
-            <ScrollReveal key={id} direction={direction as "up" | "down" | "left" | "right"}>
-              {component}
-            </ScrollReveal>
+              <ScrollReveal key={id} direction={direction as "up" | "down" | "left" | "right"}>
+                {component}
+              </ScrollReveal>
             </div>
           ))}
           <Footer />
@@ -36,11 +36,7 @@ const Home = () => {
 
 export default Home;
 
-{/* <div className="flex flex-col justify-center items-center gap-60 text-white ">
-  <Profile />
-  <AboutMe />
-  <Skills />
-  <Project />
-  <Contact />
-  <Footer />
-</div> */}
+
+
+
+

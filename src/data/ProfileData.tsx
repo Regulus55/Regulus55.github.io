@@ -15,10 +15,11 @@ export const ProfileIcon: Record<string, IconType> = {
   email: FaEnvelope,
 };
 
-export const ProfileData = {
-  name: "김학준",
-  github: "github.com/Regulus55",
-  blog: "ddd",
-  phone: "010-9169-6952",
-  email: "hakjoon55@gmail.com",
-};
+export const ProfileData = [
+  { key: "name", value: "김학준", link: false },
+  { key: "phone", value: "010-9169-6952", link: false },
+  { key: "github", value: "github.com/Regulus55", link: true, type: "url" },
+  { key: "blog", value: "velog.io/@regulus/posts", link: true, type: "url" },
+  { key: "email", value: "hakjoon55@gmail.com", link: true, type: "copy" }, // type: "mailto" -> "copy"
+];
+
