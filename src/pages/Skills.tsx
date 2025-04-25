@@ -12,14 +12,14 @@ const Skills = () => {
       >
         SKILLS
       </h1>
-      <div
-        className="flex flex-wrap items-center justify-start p-8 rounded-3xl"
-        style={{ backgroundColor: "#333354" }}
-      >
+      <div className="flex flex-wrap items-center justify-start p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
         {SkillsData.map((line, rowIndex) => (
           <div key={rowIndex} className="flex w-full justify-center">
             {line.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center justify-center gap-2 m-4 w-1/4 h-28">
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center gap-2 m-4 w-1/4 h-28"
+              >
                 {SkillsIcons[rowIndex][index]}
                 <span className="text-lg text-center text-gray-200">
                   {skill}
@@ -28,8 +28,9 @@ const Skills = () => {
             ))}
           </div>
         ))}
-      </div>
 
+        <div className="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-white/20 blur-2xl pointer-events-none" />
+      </div>
     </div>
   );
 };

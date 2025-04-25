@@ -18,7 +18,7 @@ const Profile = () => {
         PROFILE
       </h1>
       <div
-        className="flex items-center justify-start w-auto p-8 rounded-3xl"
+        className="relative flex items-center justify-start w-auto p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6"
         style={{ backgroundColor: "#333354" }}
       >
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
@@ -62,24 +62,22 @@ const Profile = () => {
               }
 
               return (
-                <div key={key} className="flex items-center gap-2 mb-2 text-white">
+                <div
+                  key={key}
+                  className="flex items-center gap-2 mb-2 text-white"
+                >
                   <Icon size={24} className="mr-4" />
                   {content}
                 </div>
               );
             })}
-
-
-
           </div>
         </div>
+
+        <div className="absolute bottom-4 right-4 w-32 h-32 rounded-full bg-white/20 blur-2xl pointer-events-none" />
       </div>
     </div>
   );
 };
 
 export default Profile;
-
-
-
-
