@@ -17,10 +17,10 @@ const AboutMe = () => {
           {AboutMeData.map((data, index) => (
             <div
               key={index}
-              className="rounded-xl p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg"
+              className="rounded-xl p-10 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg"
             >
               <h4 className="text-3xl font-bold mb-2">{data.title}</h4>
-              <div className="text-gray-300">{data.content}</div>
+              <div className="text-lg text-gray-300">{data.content}</div>
             </div>
           ))}
         </div>

@@ -29,7 +29,7 @@ const Skills = () => {
           </div>
         ))}
 
-        <div className="absolute bottom-0 right-0 w-60 h-60 rounded-full bg-white/20 blur-2xl pointer-events-none" />
+        <div className="absolute bottom-4 right-4 w-32 h-32 rounded-full bg-white/20 blur-2xl pointer-events-none" />
       </div>
     </div>
   );

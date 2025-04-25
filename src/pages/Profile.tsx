@@ -17,10 +17,7 @@ const Profile = () => {
       >
         PROFILE
       </h1>
-      <div
-        className="relative flex items-center justify-start w-auto p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6"
-        style={{ backgroundColor: "#333354" }}
-      >
+      <div className="relative flex items-center justify-start w-auto px-10 py-16 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6">
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
           <img
             src="/images/내달사진.jpg"
