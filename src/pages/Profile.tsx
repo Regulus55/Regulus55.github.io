@@ -53,19 +53,17 @@ const Profile = () => {
                     {value}
                   </a>
                 );
-              } else if (type === "copy") {
+              } else {
                 content = (
                   <button onClick={handleClick} className="hover:underline">
                     {value}
                   </button>
                 );
-              } else {
-                content = <span>{value}</span>;
               }
 
               return (
                 <div key={key} className="flex items-center gap-2 mb-2 text-white">
-                  {Icon && <Icon size={24} className="mr-4" />}
+                  <Icon size={24} className="mr-4" />
                   {content}
                 </div>
               );
