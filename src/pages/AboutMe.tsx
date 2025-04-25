@@ -12,11 +12,11 @@ const AboutMe = () => {
       </h1>
       <div
         className="flex items-center justify-start w-auto p-8 rounded-3xl"
-        style={{ backgroundColor: "#333354" }}
+       
       >
         <div className={"flex flex-col align-center justify-center gap-8"}>
           {AboutMeData.map((data, index) => (
-            <div key={index}>
+            <div key={index}  style={{ backgroundColor: "#333354" }} className="rounded-xl p-8">
               <h4 className="text-3xl font-bold mb-2">{data.title}</h4>
               <div className="text-gray-300">{data.content}</div>
             </div>

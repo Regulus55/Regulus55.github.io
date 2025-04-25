@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../data/ProfileData";
 import { IconBaseProps } from "react-icons";
 
@@ -19,10 +20,29 @@ const Contact = () => {
         CONTACT
       </h1>
 
-      <div className="flex items-center gap-4 text-xl"><PhoneIcon /> {ProfileData[1].value}</div>
-      <div className="flex items-center gap-4 text-xl"><EmailIcon /> {ProfileData[4].value}</div>
+      <div className="flex items-center gap-4 text-xl"><PhoneIcon />
+        <button
+          className="hover:underline"
+          onClick={() => {
+            navigator.clipboard.writeText(ProfileData[1].value)
+            toast("클립보드에 복사되었습니다")
+          }}>
+          {ProfileData[1].value}
+        </button>
+      </div>
+      <div className="flex items-center gap-4 text-xl"><EmailIcon /> 
+      <button
+          className="hover:underline"
+          onClick={() => {
+            navigator.clipboard.writeText(ProfileData[1].value)
+            toast("클립보드에 복사되었습니다")
+          }}>
+          {ProfileData[2].value}
+        </button>
+        </div>
     </div>
   );
 };
 
 export default Contact;
+

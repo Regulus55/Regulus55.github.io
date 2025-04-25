@@ -7,25 +7,29 @@ const Skills = () => {
       <h1
         className="text-7xl font-bold text-white ml-8 mb-4"
         style={{
-          color: "white",
           textShadow: "6px 6px #757575",
         }}
       >
         SKILLS
       </h1>
       <div
-        className="flex items-center justify-start w-auto p-8 rounded-3xl"
+        className="flex flex-wrap items-center justify-start p-8 rounded-3xl"
         style={{ backgroundColor: "#333354" }}
       >
-        {SkillsIcons.map((icon, index) => (
-          <div key={index} className="flex flex-col items-center gap-2 mx-8">
-            {icon}
-            <span className="text-lg text-center text-gray-200">
-              {SkillsData[index]}
-            </span>
+        {SkillsData.map((line, rowIndex) => (
+          <div key={rowIndex} className="flex w-full justify-center">
+            {line.map((skill, index) => (
+              <div key={index} className="flex flex-col items-center justify-center gap-2 m-4 w-1/4 h-28">
+                {SkillsIcons[rowIndex][index]}
+                <span className="text-lg text-center text-gray-200">
+                  {skill}
+                </span>
+              </div>
+            ))}
           </div>
         ))}
       </div>
+
     </div>
   );
 };

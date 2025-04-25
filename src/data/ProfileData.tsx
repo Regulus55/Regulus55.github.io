@@ -16,10 +16,11 @@ export const ProfileIcon: Record<string, IconType> = {
 };
 
 export const ProfileData = [
-  { key: "name", value: "김학준", link: false },
-  { key: "phone", value: "010-9169-6952", link: false },
-  { key: "github", value: "github.com/Regulus55", link: true, type: "url" },
-  { key: "blog", value: "velog.io/@regulus/posts", link: true, type: "url" },
-  { key: "email", value: "hakjoon55@gmail.com", link: true, type: "copy" }, // type: "mailto" -> "copy"
+  { key: "name", value: "김학준", type: "copy" },
+  { key: "phone", value: "010-9169-6952", type: "copy" },
+  { key: "email", value: "hakjoon55@gmail.com", type: "copy" },
+  { key: "blog", value: "velog.io/@regulus", type: "url" },
+  { key: "github", value: "github.com/Regulus55", type: "url" },
 ];
+
 
