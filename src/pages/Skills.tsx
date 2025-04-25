@@ -12,7 +12,7 @@ const Skills = () => {
       >
         SKILLS
       </h1>
-      <div className="flex flex-wrap items-center justify-start p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+      <div className="flex flex-wrap items-center justify-start p-6 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
         {SkillsData.map((line, rowIndex) => (
           <div key={rowIndex} className="flex w-full justify-center">
             {line.map((skill, index) => (

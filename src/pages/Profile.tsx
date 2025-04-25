@@ -10,14 +10,14 @@ const Profile = () => {
   return (
     <div className="relative flex flex-col items-start justify-center w-full max-w-7xl h-full p-10 rounded-3xl mt-52">
       <h1
-        className="text-7xl font-bold text-white ml-8 mb-4"
+        className="text-7xl font-bold text-white ml-4 mb-6"
         style={{
           textShadow: "6px 6px #757575",
         }}
       >
         PROFILE
       </h1>
-      <div className="relative flex items-center justify-start w-auto px-10 py-16 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6">
+      <div className="relative flex items-center justify-start w-auto pr-60 py-10 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6">
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
           <img
             src="/images/내달사진.jpg"
