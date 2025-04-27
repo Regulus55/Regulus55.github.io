@@ -1,19 +1,10 @@
 export const SkillsData = [
-  ["HTML", "CSS", "JavaScript", "TypeScript"], 
-  ["React", "Tailwind CSS", "Axios", "Tanstack Query"], 
-];
-
-export const SkillsIcons = [
-  [
-    <img src="/images/icons/html.png" alt="HTML" className="h-12 w-12" />,
-    <img src="/images/icons/css.png" alt="CSS" className="h-12 w-12" />,
-    <img src="/images/icons/js.png" alt="JavaScript" className="h-12 w-12" />,
-    <img src="/images/icons/ts.png" alt="TypeScript" className="h-12 w-12" />
-  ],
-  [
-    <img src="/images/icons/react.png" alt="React" className="h-12 w-12" />,
-    <img src="/images/icons/tw.png" alt="Tailwind CSS" className="h-12 w-12" />,
-    <img src="/images/icons/axios.png" alt="Axios" className="h-12 w-12" />,
-    <img src="/images/icons/react-query-seeklogo.png" alt="Tanstack Query" className="h-12 w-12" />
-  ], 
+  { name: "HTML", img: <img src="/images/icons/html.png" alt="HTML" className="h-12 w-12" /> },
+  { name: "CSS", img: <img src="/images/icons/css.png" alt="CSS" className="h-12 w-12" /> },
+  { name: "JavaScript", img: <img src="/images/icons/js.png" alt="JavaScript" className="h-12 w-12" /> },
+  { name: "TypeScript", img: <img src="/images/icons/ts.png" alt="TypeScript" className="h-12 w-12" /> },
+  { name: "React", img: <img src="/images/icons/react.png" alt="React" className="h-12 w-12" /> },
+  { name: "Tailwind CSS", img: <img src="/images/icons/tw.png" alt="Tailwind CSS" className="h-12 w-12" /> },
+  { name: "Axios", img: <img src="/images/icons/axios.png" alt="Axios" className="h-12 w-12" /> },
+  { name: "Tanstack Query", img: <img src="/images/icons/react-query-seeklogo.png" alt="Tanstack Query" className="h-12 w-12" /> },
 ];

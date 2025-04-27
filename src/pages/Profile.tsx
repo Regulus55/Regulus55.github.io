@@ -10,7 +10,7 @@ const Profile = () => {
   return (
     <div className="relative flex flex-col items-start justify-center w-full max-w-7xl h-full p-10 rounded-3xl mt-52">
       <h1
-        className="text-7xl font-bold text-white ml-4 mb-6"
+        className="text-7xl font-bold text-white ml-6 mb-6"
         style={{
           textShadow: "6px 6px #757575",
         }}

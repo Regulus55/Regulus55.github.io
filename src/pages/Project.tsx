@@ -13,19 +13,27 @@ const Project = () => {
       </h1>
 
       {ProjectData.map((project) => (
-        <div className="flex items-center justify-start w-auto p-8 my-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
-          <div>{project.title}</div>
-          <div>{project.subtitle}</div>
-          <div>{project.period}</div>
-          <div>{project.content}</div>
-          <div>
-            {project.skills.map((skill) => (
-              <>{skill}</>
-            ))}
+        <div className="relative flex items-center justify-start w-full my-8">
+          <div className="flex p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+            <img src="/images/내달사진.jpg" alt="" className="w-60 h-60" />
+            <div className="flex flex-col ml-8">
+              <div className="flex items-center justify-between">
+                <h2 className="text-2xl font-bold">{project.title}</h2>
+                <div>{project.subtitle}</div>
+              </div>
+              <div>{project.period}</div>
+              <div>{project.content}</div>
+              <div>
+                {project.skills.map((skill) => (
+                  <>{skill}</>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      ))}
-    </div>
+      ))
+      }
+    </div >
   );
 };
 
