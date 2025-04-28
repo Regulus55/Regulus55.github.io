@@ -9,9 +9,9 @@ import Skills from "./Skills";
 
 const section = [
   { id: 1, component: <Profile />, direction: "up" },
-  { id: 2, component: <AboutMe />, direction: "up" },
+  { id: 2, component: <AboutMe />, direction: "right" },
   { id: 3, component: <Skills />, direction: "up" },
-  { id: 4, component: <Project />, direction: "left" },
+  { id: 4, component: <Project />, direction: "down" },
   { id: 5, component: <Contact />, direction: "up" },
 ];
 

@@ -3,12 +3,7 @@ import { SkillsData } from "../data";
 const Skills = () => {
   return (
     <div className="flex flex-col items-start justify-center w-full w-full h-full p-10 rounded-3xl mb-20">
-      <h1
-        className="text-7xl font-bold text-white ml-8 mb-8"
-        style={{
-          textShadow: "6px 6px #757575",
-        }}
-      >
+      <h1 className="text-7xl font-bold text-white ml-8 mb-8 text-grayShadow">
         SKILLS
       </h1>
       <div className="flex flex-nowrap items-center justify-center w-full p-6 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
