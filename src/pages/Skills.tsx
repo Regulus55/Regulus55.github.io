@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col items-start justify-center w-full w-full h-full p-10 rounded-3xl mb-20">
       <h1
-        className="text-7xl font-bold text-white ml-8 mb-4"
+        className="text-7xl font-bold text-white ml-8 mb-8"
         style={{
           textShadow: "6px 6px #757575",
         }}
