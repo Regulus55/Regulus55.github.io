@@ -1,3 +1,4 @@
+import ScrollReveal from "../components/wrapper/ScrollReveal";
 import { ProjectData } from "../data";
 
 const Project = () => {
@@ -12,8 +13,11 @@ const Project = () => {
         PROJECT
       </h1>
 
-      {ProjectData.map((project, index) => (
+      {ProjectData.map((project, index) => {
+        const isEven = index%2 === 0;
+        return (
         <div key={index} className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16">
+          <ScrollReveal direction={isEven ? "left" : "right"}>
           <div className="flex p-8 backd/rop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
             {/* <div className="flex p-8 bg-gray-700 rounded-xl shadow-lg"> */}
             <img src="/images/내달사진.jpg" alt="" className="w-60 h-60" />
@@ -31,8 +35,9 @@ const Project = () => {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
-      ))}
+      )})}
     </div>
   );
 };
