@@ -9,11 +9,11 @@ import Skills from "./Skills";
 
 const section = [
   { id: 1, component: <Profile />, direction: "up" },
-  { id: 2, component: <AboutMe />, direction: "up" },
+  { id: 2, component: <AboutMe />, direction: "right" },
   { id: 3, component: <Skills />, direction: "up" },
-  { id: 4, component: <Project />, direction: "left" },
+  { id: 4, component: <Project />, direction: "down" },
   { id: 5, component: <Contact />, direction: "up" },
-]
+];
 
 const Home = () => {
   return (
@@ -22,7 +22,10 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center gap-60 text-white">
           {section.map(({ id, component, direction }) => (
             <div className="w-full max-w-7xl">
-              <ScrollReveal key={id} direction={direction as "up" | "down" | "left" | "right"}>
+              <ScrollReveal
+                key={id}
+                direction={direction as "up" | "down" | "left" | "right"}
+              >
                 {component}
               </ScrollReveal>
             </div>
@@ -35,8 +38,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-

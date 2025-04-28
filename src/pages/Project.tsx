@@ -1,37 +1,51 @@
+import ScrollReveal from "../components/wrapper/ScrollReveal";
 import { ProjectData } from "../data";
 
 const Project = () => {
   return (
-    <div className="flex flex-col items-start justify-center w-full w-full max-w-7xl h-full p-10 rounded-3xl">
-      <h1
-        className="text-7xl font-bold text-white ml-8 mb-4"
-        style={{
-
-          textShadow: "6px 6px #757575",
-        }}
-      >
+    <div className="flex flex-col items-center justify-center w-full h-full p-10">
+      <h1 className="w-full text-7xl text-center font-bold text-white ml-8 mb-8 text-grayShadow">
         PROJECT
       </h1>
 
-
-      {ProjectData.map((project) => (
-        <div
-          className="flex items-center justify-start w-auto p-8 my-8 rounded-3xl"
-          style={{ backgroundColor: "#333354" }}
-        >
-          <div>{project.title}</div>
-          <div>{project.subtitle}</div>
-          <div>{project.period}</div>
-          <div>{project.content}</div>
-          <div>
-            {project.skills.map((skill) => (
-              <>{skill}</>
-            ))}
+      {ProjectData.map((project, index) => {
+        const isEven = index % 2 === 0;
+        return (
+          <div
+            key={index}
+            className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16"
+          >
+            <ScrollReveal direction={isEven ? "left" : "right"}>
+              <div className="flex p-8 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+                {/* <div className="flex p-8 bg-gray-500 rounded-xl shadow-lg"> */}
+                <img
+                  src={project.image}
+                  alt=""
+                  className="w-60 h-60 object-cover rounded-xl"
+                />
+                <div className="flex flex-col ml-8 p-4">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-3xl font-bold">{project.title}</h2>
+                    <div className="text-gray-300 text-lg font-bold">
+                      {project.subtitle}
+                    </div>
+                  </div>
+                  <div className="text-gray-400 text-lg font-bold mb-2">
+                    {project.period}
+                  </div>
+                  <div className="text-lg text-gray-100">{project.content}</div>
+                  <div>
+                    {project.skills.map((skill) => (
+                      <>{skill}</>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
-
   );
 };
 
