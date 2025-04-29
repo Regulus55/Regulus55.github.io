@@ -20,7 +20,7 @@ const Project = () => {
               <Glassmorphism className="flex p-8">
                 {/* <div className="flex p-8 bg-gray-500 rounded-xl shadow-lg"> */}
                 <img
-                  src={project.image}
+                  src={`${process.env.PUBLIC_URL}/${project.image}`}
                   alt=""
                   className="w-60 h-60 object-cover rounded-xl"
                 />
