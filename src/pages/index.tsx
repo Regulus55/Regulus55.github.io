@@ -3,11 +3,11 @@ import HeroSection from "./HeroSection";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
 
-import Profile from "./Profile";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
-import Project from "./Project";
-import Contact from "./Contact";
+import Profile from "./contents/Profile";
+import AboutMe from "./contents/AboutMe";
+import Skills from "./contents/Skills";
+import Project from "./contents/Project";
+import Contact from "./contents/Contact";
 
 export {
   Home,

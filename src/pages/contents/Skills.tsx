@@ -1,4 +1,5 @@
-import { SkillsData } from "../data";
+import Glassmorphism from "../../components/wrapper/Glassmorphism";
+import { SkillsData } from "../../data";
 
 const Skills = () => {
   return (
@@ -6,20 +7,20 @@ const Skills = () => {
       <h1 className="text-7xl font-bold text-white ml-8 mb-8 text-grayShadow">
         SKILLS
       </h1>
-      <div className="flex flex-nowrap items-center justify-center w-full p-6 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
-        {SkillsData.map((skill, index) => (
+      <Glassmorphism className="flex flex-nowrap items-center justify-center w-full p-6">
+        {SkillsData.slice(0, 8).map((skill, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-start gap-2 m-4 mt-10 w-full h-28"
           >
-            {skill.image}
+            <img src={skill.src} alt={skill.alt} className="w-12 h-12" />
             <span className="text-lg text-center text-gray-200">
               {skill.name}
             </span>
           </div>
         ))}
         <div className="absolute bottom-4 right-4 w-32 h-32 rounded-full bg-white/20 blur-2xl pointer-events-none" />
-      </div>
+      </Glassmorphism>
     </div>
   );
 };
