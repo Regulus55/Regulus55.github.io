@@ -1,5 +1,5 @@
 import ScrollReveal from "../components/wrapper/ScrollReveal";
-import { ProjectData } from "../data";
+import { ProjectData, SkillsData } from "../data";
 
 const Project = () => {
   return (
@@ -23,10 +23,10 @@ const Project = () => {
                   alt=""
                   className="w-60 h-60 object-cover rounded-xl"
                 />
-                <div className="flex flex-col ml-8 p-4">
+                <div className="flex flex-col ml-8 p-2">
                   <div className="flex items-center justify-between">
                     <h2 className="text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-300 text-lg font-bold">
+                    <div className="text-gray-400 text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
@@ -34,10 +34,10 @@ const Project = () => {
                     {project.period}
                   </div>
                   <div className="text-lg text-gray-100">{project.content}</div>
-                  <div>
-                    {project.skills.map((skill) => (
-                      <>{skill}</>
-                    ))}
+                  <div className="flex mt-4 gap-4">
+                    {project.skills.map(name =>
+                      SkillsData.find(skill => skill.name === name)?.image
+                    )}
                   </div>
                 </div>
               </div>
