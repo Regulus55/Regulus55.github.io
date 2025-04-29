@@ -3,26 +3,11 @@ import { Parallax } from "react-scroll-parallax";
 
 const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative h-[700vh]">
+    <div className="relative h-[800vh]">
       <div className="absolute inset-0 z-10 overflow-hidden">
         <Parallax speed={0}>
-          <div className="w-full h-[700vh] flex justify-center overflow-hidden">
-            <div
-              className="w-full h-full"
-              style={{
-                background: `linear-gradient(
-                      to bottom,
-                      #010037 0%,    
-                      #0D0C59 17%,  
-                      #201E8D 31%,
-                      #3863DA 48%,
-                      #73AEE2 64%,
-                      #AFD9FF 75%,
-                      #DBEEFF 87%,
-                      #DBEEFF 100%
-                    )`,
-              }}
-            />
+          <div className="w-full h-[800vh] flex justify-center overflow-hidden">
+            <div className="w-full h-full bg-day-sky"/>
           </div>
         </Parallax>
       </div>
