@@ -1,22 +1,16 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
-import { HeroSection } from "../../pages";
 
 const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative">
-      <section className="h-[100vh] z-0 relative">
-        <HeroSection />
-      </section>
-
-      <div className="relative h-[800vh]">
-        <div className="absolute inset-0 z-10 overflow-hidden">
-          <Parallax speed={0}>
-            <div className="w-full h-[800vh] flex justify-center overflow-hidden">
-              <div
-                className="w-full h-full"
-                style={{
-                  background: `linear-gradient(
+    <div className="relative h-[700vh]">
+      <div className="absolute inset-0 z-10 overflow-hidden">
+        <Parallax speed={0}>
+          <div className="w-full h-[700vh] flex justify-center overflow-hidden">
+            <div
+              className="w-full h-full"
+              style={{
+                background: `linear-gradient(
                       to bottom,
                       #010037 0%,    
                       #0D0C59 17%,  
@@ -27,36 +21,35 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
                       #DBEEFF 87%,
                       #DBEEFF 100%
                     )`,
-                }}
-              />
-            </div>
-          </Parallax>
-        </div>
-
-        <div className="absolute left-0 right-0 z-20">
-          <Parallax speed={80}>
-            <img
-              src="/images/background/star1.png"
-              alt="stars1"
-              draggable={false}
-              className="w-full h-full object-cover"
+              }}
             />
-          </Parallax>
-        </div>
-
-        <div className="absolute top-[150vh] left-0 right-0 z-30">
-          <Parallax speed={-80}>
-            <img
-              src="/images/background/star2.png"
-              alt="stars2"
-              draggable={false}
-              className="w-full h-full object-cover"
-            />
-          </Parallax>
-        </div>
-
-        <div className="relative z-50">{children}</div>
+          </div>
+        </Parallax>
       </div>
+
+      <div className="absolute left-0 right-0 z-20">
+        <Parallax speed={80}>
+          <img
+            src="/images/background/star1.png"
+            alt="stars1"
+            draggable={false}
+            className="w-full h-full object-cover"
+          />
+        </Parallax>
+      </div>
+
+      <div className="absolute top-[150vh] left-0 right-0 z-30">
+        <Parallax speed={-80}>
+          <img
+            src="/images/background/star3.png"
+            alt="stars2"
+            draggable={false}
+            className="w-full h-full object-cover"
+          />
+        </Parallax>
+      </div>
+
+      <div className="relative z-50">{children}</div>
     </div>
   );
 };
