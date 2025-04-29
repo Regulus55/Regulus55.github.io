@@ -5,8 +5,8 @@ module.exports = {
       boxShadow: {
         grayShadow: "6px 6px #757575",
       },
-      backgroundImage:{
-        'day-sky': `linear-gradient(
+      backgroundImage: {
+        "day-sky": `linear-gradient(
           to bottom,
           #010037 0%,    
           #0D0C59 17%,  
@@ -17,18 +17,18 @@ module.exports = {
           #DBEEFF 87%,
           #DBEEFF 100%
         )`,
-        'sunset-sky': `linear-gradient(
+        "sunset-sky": `linear-gradient(
           to bottom,
           #010037 0%,
-          #0D0C59 17%,
-          #43387A 31%,
-          #804466 48%,
-          #C85B4C 64%,
-          #FFA170 75%,
-          #FFE4C4 87%,
-          #FFF4EC 100%
-        )`
-      }
+          #43387A 17%,
+          #804466 31%,
+          #9E4C54 48%,
+          #C85B4C 64%, 
+          #D67A5A 75%,
+          #FFA170 87%,
+          #FFE4C4 100%
+        )`,
+      },
     },
   },
   plugins: [
