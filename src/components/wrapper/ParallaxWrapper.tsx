@@ -5,7 +5,7 @@ import { HeroSection } from "../../pages";
 const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative">
-      <section className="h-[100vh] z-0 relative bg-gray-500">
+      <section className="h-[100vh] z-0 relative">
         <HeroSection />
       </section>
 

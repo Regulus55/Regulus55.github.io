@@ -12,8 +12,8 @@ export default function ScrollReveal({ children, direction = "up" }: ScrollRevea
   const directionMap = {
     up: "translate-y-10",
     down: "-translate-y-10",
-    left: "-translate-x-10",
-    right: "translate-x-10",
+    left: "translate-x-10",
+    right: "-translate-x-10",
   };
 
   return (

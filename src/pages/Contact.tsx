@@ -10,13 +10,8 @@ type IconProps = {
 const Contact = () => {
   return (
     <div className="relative flex flex-col items-center justify-center">
-      <div className="w-auto h-full px-20 pt-16 pb-32 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
-        <h1
-          className="text-7xl font-bold text-white  mb-4"
-          style={{
-            textShadow: "6px 6px #757575",
-          }}
-        >
+      <div className="w-auto h-full px-20 pt-12 pb-32 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+        <h1 className="text-7xl font-bold text-white mb-4 text-grayShadow">
           CONTACT
         </h1>
 
