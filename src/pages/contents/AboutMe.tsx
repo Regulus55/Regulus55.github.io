@@ -1,5 +1,6 @@
-import ScrollReveal from "../components/wrapper/ScrollReveal";
-import { AboutMeData } from "../data";
+import Glassmorphism from "../../components/wrapper/Glassmorphism";
+import ScrollReveal from "../../components/wrapper/ScrollReveal";
+import { AboutMeData } from "../../data";
 
 const AboutMe = () => {
   return (
@@ -10,11 +11,11 @@ const AboutMe = () => {
       <div className="flex items-center justify-start w-auto p-4">
         <div className={"flex flex-col align-center justify-center gap-10"}>
           {AboutMeData.map((data, index) => (
-            <ScrollReveal key={index} direction="right">
-              <div className="rounded-xl p-10 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+            <ScrollReveal key={index} direction="left">
+              <Glassmorphism className="p-10">
                 <h4 className="text-3xl font-bold mb-2">{data.title}</h4>
                 <div className="text-lg text-gray-300">{data.content}</div>
-              </div>
+              </Glassmorphism>
             </ScrollReveal>
           ))}
         </div>

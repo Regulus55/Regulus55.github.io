@@ -1,6 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { ProfileData, ProfileIcon } from "../data/ProfileData";
+import { ProfileData, ProfileIcon } from "../../data/ProfileData";
+import Glassmorphism from "../../components/wrapper/Glassmorphism";
 
 type IconProps = {
   size?: number;
@@ -10,7 +11,7 @@ type IconProps = {
 const Contact = () => {
   return (
     <div className="relative flex flex-col items-center justify-center">
-      <div className="w-auto h-full px-20 pt-12 pb-32 backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg">
+      <Glassmorphism className="w-auto h-full px-20 pt-12 pb-32">
         <h1 className="text-7xl font-bold text-white mb-4 text-grayShadow">
           CONTACT
         </h1>
@@ -35,7 +36,7 @@ const Contact = () => {
             </div>
           );
         })}
-      </div>
+      </Glassmorphism>
     </div>
   );
 };
