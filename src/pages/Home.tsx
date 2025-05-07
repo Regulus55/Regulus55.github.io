@@ -27,15 +27,16 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center gap-60 text-white">
           {section.map(({ id, component, direction }) => (
             <div key={id} className="w-full max-w-7xl">
-              <ScrollReveal direction={direction as "up" | "down" | "left" | "right"} >
+              <ScrollReveal
+                direction={direction as "up" | "down" | "left" | "right"}
+              >
                 {component}
               </ScrollReveal>
             </div>
           ))}
-      
+          <Footer />
         </div>
       </ParallaxWrapper>
-      <Footer />
     </div>
   );
 };

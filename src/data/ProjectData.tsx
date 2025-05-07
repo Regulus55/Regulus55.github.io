@@ -25,7 +25,7 @@ export const ProjectData = [
   },
   {
     title: "GU-Shop",
-    subtitle: "대학생저격 갤럭시제품 판매사이트",
+    subtitle: "대학생저격 갤럭시샵",
     period: "2024.10 ~ 2025.01",
     content:
       "대학생들에게 필요한 갤럭시 제품을 선별해 판매하는 쇼핑몰 사이트입니다. 카테고리 정렬, 필터링 기능 구현과 RESTful API 연동 경험을 목표로 개발했습니다.",
