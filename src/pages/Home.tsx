@@ -18,8 +18,8 @@ const section = [
 
 const Home = () => {
   return (
-    <div className="relative w-full">
-      <div className="relative h-[100vh] z-0 ">
+    <div className="relative w-full h-full">
+      <div className="relative h-[100vh] -z-20 ">
         <HeroSection />
       </div>
 
@@ -34,9 +34,12 @@ const Home = () => {
               </ScrollReveal>
             </div>
           ))}
-          <Footer />
         </div>
       </ParallaxWrapper>
+
+      <div className="relative w-full">
+        <Footer />
+      </div>
     </div>
   );
 };
