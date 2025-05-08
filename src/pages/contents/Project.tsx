@@ -35,7 +35,7 @@ const Project = () => {
                   <div className="text-gray-500 text-md font-bold mb-2">
                     {project.period}
                   </div>
-                  <div className="text-lg text-gray-100">{project.content}</div>
+                  <div className="text-lg text-gray-800">{project.content}</div>
                   <div className="flex mt-4 gap-4">
                     {project.skills.map((name) => {
                       const skill = SkillsData.find((s) => s.name === name);
