@@ -9,7 +9,7 @@ const Footer = () => {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className="relative z-50 flex justify-center items-end h-full pb-4">
+            <div className="relative z-47 flex justify-center items-end h-full pb-4">
                 <span className="text-white text-md px-4 py-1">
                     ⓒ 2025 김학준 Portfolio | All Rights Reserved.
                 </span>
