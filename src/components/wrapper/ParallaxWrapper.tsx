@@ -7,7 +7,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="relative">
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-5">
         <div
           className={`w-full min-h-full 
                 ${isDayMode ? "bg-day-sky" : "bg-sunset-sky"

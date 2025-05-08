@@ -11,7 +11,7 @@ export const SkillsData = [
     src: "/images/icons/react-query-seeklogo.png",
     alt: "Tanstack Query",
   },
-  { name: "Firebase", src: "/images/icons/firebase.png", alt: "Firebase" },
+  { name: "Firebase", src: "images/icons/firebase.png", alt: "Firebase" },
   { name: "Github", src: "/images/icons/github.png", alt: "Github" },
   { name: "Figma", src: "/images/icons/figma.png", alt: "Figma" },
 ];

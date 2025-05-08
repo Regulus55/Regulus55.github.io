@@ -19,7 +19,7 @@ const section = [
 const Home = () => {
   return (
     <div className="relative w-full h-full">
-      <div className="relative h-[100vh] -z-20 ">
+      <div className="relative h-[100vh] z-0 ">
         <HeroSection />
       </div>
 

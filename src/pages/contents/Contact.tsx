@@ -10,7 +10,7 @@ type IconProps = {
 
 const Contact = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center mb-60">
+    <div className="relative flex flex-col items-center justify-center mb-96">
       <Glassmorphism className="w-auto h-full px-20 pt-12 pb-32 opacity-1">
         <h1 className="text-7xl font-bold text-white mb-4 text-grayShadow">
           CONTACT

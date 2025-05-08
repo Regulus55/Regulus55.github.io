@@ -6,6 +6,7 @@ module.exports = {
         grayShadow: "6px 6px #757575",
       },
       zIndex: {
+        5: "5",
         21: "21",
         22: "22",
         23: "23",
