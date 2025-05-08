@@ -2,15 +2,16 @@ import { IconType } from "react-icons";
 import {
   FaIdCardAlt,
   FaGithub,
-  FaPen,
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { SiVelog } from "react-icons/si";
+
 
 export const ProfileIcon: Record<string, IconType> = {
   name: FaIdCardAlt,
   github: FaGithub,
-  blog: FaPen,
+  blog: SiVelog,
   phone: FaPhone,
   email: FaEnvelope,
 };

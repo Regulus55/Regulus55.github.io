@@ -20,21 +20,22 @@ const Project = () => {
               <Glassmorphism className="flex p-8">
                 {/* <div className="flex p-8 bg-gray-500 rounded-xl shadow-lg"> */}
                 <img
-                  src={`${process.env.PUBLIC_URL}/${project.image}`}
+                  // src={`${process.env.PUBLIC_URL}/${project.image}`}
+                  src={project.image}
                   alt=""
                   className="w-60 h-60 object-cover rounded-xl"
                 />
                 <div className="flex flex-col ml-8 p-2">
                   <div className="flex items-center justify-between">
                     <h2 className="text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-400 text-lg font-bold">
+                    <div className="text-gray-500 text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
-                  <div className="text-gray-400 text-lg font-bold mb-2">
+                  <div className="text-gray-500 text-md font-bold mb-2">
                     {project.period}
                   </div>
-                  <div className="text-lg text-gray-100">{project.content}</div>
+                  <div className="text-lg text-gray-800">{project.content}</div>
                   <div className="flex mt-4 gap-4">
                     {project.skills.map((name) => {
                       const skill = SkillsData.find((s) => s.name === name);

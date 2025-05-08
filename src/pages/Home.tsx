@@ -5,6 +5,7 @@ import Contact from "./contents/Contact";
 import Profile from "./contents/Profile";
 import Project from "./contents/Project";
 import Skills from "./contents/Skills";
+import FloatingButton from "./FloatingButton";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 
@@ -37,9 +38,8 @@ const Home = () => {
         </div>
       </ParallaxWrapper>
 
-      <div className="relative w-full">
-        <Footer />
-      </div>
+      <FloatingButton />
+      <Footer />
     </div>
   );
 };

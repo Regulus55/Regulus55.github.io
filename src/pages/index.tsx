@@ -1,5 +1,6 @@
 import Home from "./Home";
 import HeroSection from "./HeroSection";
+import FloatingButton from "./FloatingButton";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
 
@@ -12,6 +13,7 @@ import Contact from "./contents/Contact";
 export {
   Home,
   HeroSection,
+  FloatingButton,
   Footer,
   NotFound,
   Profile,

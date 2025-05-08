@@ -37,7 +37,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
         </Parallax>
       </div>
 
-      <div className="relative z-50">{children}</div>
+      <div className="relative z-45">{children}</div>
     </div>
   );
 };
