@@ -5,6 +5,18 @@ module.exports = {
       boxShadow: {
         grayShadow: "6px 6px #757575",
       },
+      zIndex: {
+        5: "5",
+        21: "21",
+        22: "22",
+        23: "23",
+        24: "24",
+        25: "25",
+        26: "26",
+        27: "27",
+        28: "28",
+        29: "29",
+      },
       backgroundImage: {
         "day-sky": `linear-gradient(
           to bottom,

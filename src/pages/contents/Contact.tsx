@@ -10,8 +10,8 @@ type IconProps = {
 
 const Contact = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center">
-      <Glassmorphism className="w-auto h-full px-20 pt-12 pb-32">
+    <div className="relative flex flex-col items-center justify-center mb-96">
+      <Glassmorphism className="w-auto h-full px-20 pt-12 pb-32 opacity-1">
         <h1 className="text-7xl font-bold text-white mb-4 text-grayShadow">
           CONTACT
         </h1>
@@ -27,7 +27,7 @@ const Contact = () => {
           return (
             <div
               key={key}
-              className="flex items-center justify-center gap-2 mb-2 text-xl text-white"
+              className="flex items-center justify-center gap-2 mb-2 text-xl text-gray-600"
             >
               <Icon size={24} className="mr-4" />
               <button onClick={handleClick} className="hover:underline">
