@@ -22,7 +22,7 @@ const Profile = () => {
           />
         </div>
         <div className={"flex flex-col items-left justify-center text-3xl"}>
-          {ProfileData.map(({ key, value, type }) => {
+          {ProfileData.map(({ key, title, value, type }) => {
             const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
 
             const handleClick = () => {
@@ -47,7 +47,7 @@ const Profile = () => {
               );
             } else {
               content = (
-                <button onClick={handleClick} className="hover:underline">
+                <button onClick={handleClick} title={title} className="hover:underline" >
                   {value}
                 </button>
               );

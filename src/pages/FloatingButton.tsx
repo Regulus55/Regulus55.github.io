@@ -10,12 +10,12 @@ type IconProps = {
 const FloatingButton = () => {
   return (
     <div className="fixed bottom-8 right-6 flex flex-col z-50 gap-3">
-      {FloatingData.map(({ key, value, name, type }) => {
+      {FloatingData.map(({ key, value, title, type }) => {
         const Icon = FloatingIcon[key] as React.ComponentType<IconProps>;
 
         const props = {
           key,
-          title: name,
+          title: title,
           ...(type === "scroll"
             ? { onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }) }
             : { href: `https://${value}` }),
