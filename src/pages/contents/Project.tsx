@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import Glassmorphism from "../../components/wrapper/Glassmorphism";
 import ScrollReveal from "../../components/wrapper/ScrollReveal";
 import { ProjectData, SkillsData } from "../../data";
+import { saveScrollY } from "../../utils/scroll";
 
 const Project = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-60">
       <h1 className="w-full text-7xl text-center font-bold text-white ml-8 mb-8 text-grayShadow">
@@ -14,7 +18,11 @@ const Project = () => {
         return (
           <div
             key={index}
-            className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16"
+            onClick={() => {
+              saveScrollY();
+              navigate(`/${project.slug}`);
+            }}
+            className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16 hover:cursor-pointer"
           >
             <ScrollReveal direction={isEven ? "left" : "right"}>
               <Glassmorphism className="flex p-8">
@@ -33,7 +41,9 @@ const Project = () => {
                   <div className="text-gray-500 text-md font-bold mb-2">
                     {project.period}
                   </div>
-                  <div className="text-lg text-gray-700 font-semibold">{project.content}</div>
+                  <div className="text-lg text-gray-700 font-semibold">
+                    {project.content}
+                  </div>
                   <div className="flex mt-4 gap-4">
                     {project.skills.map((name) => {
                       const skill = SkillsData.find((s) => s.name === name);

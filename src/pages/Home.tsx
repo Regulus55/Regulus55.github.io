@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ParallaxWrapper from "../components/wrapper/ParallaxWrapper";
 import ScrollReveal from "../components/wrapper/ScrollReveal";
 import AboutMe from "./contents/AboutMe";

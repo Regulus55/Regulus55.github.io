@@ -1,5 +1,6 @@
 export const ProjectData = [
   {
+    slug: "portfolio",
     title: "포트폴리오",
     subtitle: "나의 작은 포트폴리오",
     period: "2025.04 ~ 진행중",
@@ -9,6 +10,7 @@ export const ProjectData = [
     image: "images/project/portfolio/main.PNG",
   },
   {
+    slug: "narak",
     title: "Narak - 나락",
     subtitle: "모의주식투자 사이트",
     period: "2024.11 ~ 진행중",
@@ -24,6 +26,7 @@ export const ProjectData = [
     image: "images/project/narak/main.PNG",
   },
   {
+    slug: "gushop",
     title: "GU-Shop",
     subtitle: "대학생저격 갤럭시샵",
     period: "2024.10 ~ 2025.01",

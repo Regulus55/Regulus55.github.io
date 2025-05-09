@@ -19,6 +19,8 @@ module.exports = {
         45: "45",
         46: "46",
         47: "47",
+        48: "48",
+        49: "49",
       },
       backgroundImage: {
         "day-sky": `linear-gradient(
