@@ -37,9 +37,6 @@ const Home = () => {
           ))}
         </div>
       </ParallaxWrapper>
-
-      <FloatingButton />
-      <Footer />
     </div>
   );
 };

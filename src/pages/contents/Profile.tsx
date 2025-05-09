@@ -38,16 +38,17 @@ const Profile = () => {
               content = (
                 <a
                   href={`https://${value}`}
+                  title={title}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:text-gray-200"
                 >
                   {value}
                 </a>
               );
             } else {
               content = (
-                <button onClick={handleClick} title={title} className="hover:underline" >
+                <button onClick={handleClick} title={title} className="hover:text-gray-200" >
                   {value}
                 </button>
               );

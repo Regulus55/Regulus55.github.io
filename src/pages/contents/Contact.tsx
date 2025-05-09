@@ -16,7 +16,7 @@ const Contact = () => {
           CONTACT
         </h1>
 
-        {ProfileData.slice(1, 3).map(({ key, value }) => {
+        {ProfileData.slice(1, 3).map(({ key, value, title }) => {
           const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
 
           const handleClick = () => {
@@ -30,7 +30,7 @@ const Contact = () => {
               className="flex items-center justify-center gap-2 mb-2 text-xl text-gray-600"
             >
               <Icon size={24} className="mr-4" />
-              <button onClick={handleClick} className="hover:underline">
+              <button onClick={handleClick} title={title} className="hover:text-gray-500">
                 {value}
               </button>
             </div>
