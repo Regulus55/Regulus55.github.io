@@ -9,7 +9,7 @@ type IconProps = {
 
 const FloatingButton = () => {
   return (
-    <div className="fixed bottom-8 right-4 flex flex-col z-50 gap-3">
+    <div className="fixed bottom-8 right-6 flex flex-col z-50 gap-3">
       {FloatingData.map(({ key, value, name, type }) => {
         const Icon = FloatingIcon[key] as React.ComponentType<IconProps>;
 
@@ -23,7 +23,7 @@ const FloatingButton = () => {
 
         return (
           <BaseIconButton {...props}>
-            <Icon size={24} />
+            <Icon size={28} />
           </BaseIconButton>
         );
       })}
