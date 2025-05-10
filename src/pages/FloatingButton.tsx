@@ -23,7 +23,7 @@ const FloatingButton = () => {
 
         return (
           <BaseIconButton {...props}>
-            <Icon size={28} />
+            <Icon size={24} />
           </BaseIconButton>
         );
       })}
