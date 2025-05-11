@@ -25,19 +25,6 @@ const ProjectDetail = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // 이전 스크롤 위치 복원
-  // useEffect(() => {
-  //   const savedY = localStorage.getItem("scrollY");
-  //   if (savedY) {
-  //     setTimeout(() => {
-  //       window.scrollTo(0, parseInt(savedY, 10));
-  //     }, 50);
-  //   }
-  //   return () => {
-  //     localStorage.setItem("scrollY", window.scrollY.toString());
-  //   };
-  // }, []);
-
   const detail = AllProjectDetail.find((p) => p.slug === slug);
   if (!detail) return null;
 
@@ -58,13 +45,11 @@ const ProjectDetail = () => {
           >
             <h1 className="text-4xl text-white font-bold">{detail.title}</h1>
             <p className="text-md mb-4 text-gray-300">{detail.period}</p>
-            <img
-              src={detail.image}
-              alt={detail.title}
-              className="w-full max-w-xl rounded-md mb-8"
-            />
+            <div className="max-w-xl w-full max-h-96 overflow-hidden rounded-md mb-8">
+              <img src={detail.image} alt={detail.title} className="w-full" />
+            </div>
             <h3 className="text-xl font-semibold mb-4">{detail.subtitle}</h3>
-            <div className="flex gap-4 bg-white p-2 rounded-xl shadow-xl">
+            {/* <div className="flex gap-4 bg-white p-2 rounded-lg shadow-xl">
               {detail.skills.map((name) => {
                 const skill = SkillsData.find((s) => s.name === name);
 
@@ -77,6 +62,18 @@ const ProjectDetail = () => {
                   />
                 ) : null;
               })}
+            </div> */}
+
+            <div className="bg-white text-3xl font-3xl p-2">
+              {detail.skills.map((name, index) => {
+                // const skill = SkillsData.find((s) => s.name === name);
+
+                return <div key={index}>:ddddddddddddd</div>;
+              })}
+            </div>
+            <div className="flex flex-col items-center justify-center w-full border-t-2 border-gray-500 mt-10">
+              <div>dd</div>
+              <div>dd</div>
             </div>
           </div>
         </Glassmorphism>
