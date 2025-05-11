@@ -2,10 +2,17 @@ import { useNavigate } from "react-router-dom";
 import Glassmorphism from "../../components/wrapper/Glassmorphism";
 import ScrollReveal from "../../components/wrapper/ScrollReveal";
 import { ProjectData, SkillsData } from "../../data";
-import { saveScrollY } from "../../utils/scroll";
+import { restoreScrollY, saveScrollY } from "../../utils/scroll";
+import { useEffect } from "react";
 
 const Project = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    return () => {
+      saveScrollY();
+    };
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-60">

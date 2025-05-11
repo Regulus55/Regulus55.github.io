@@ -1,10 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { ProjectData } from "../data/ProjectData";
 import { useEffect } from "react";
-import { restoreScrollY } from "../utils/scroll";
 import { useThemeStore } from "../store/useThemeStore";
 import Glassmorphism from "../components/wrapper/Glassmorphism";
 import AllProjectDetail from "../data/projectDetail";
+import { SkillsData } from "../data";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -27,11 +26,17 @@ const ProjectDetail = () => {
   }, []);
 
   // 이전 스크롤 위치 복원
-  useEffect(() => {
-    return () => {
-      restoreScrollY();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const savedY = localStorage.getItem("scrollY");
+  //   if (savedY) {
+  //     setTimeout(() => {
+  //       window.scrollTo(0, parseInt(savedY, 10));
+  //     }, 50);
+  //   }
+  //   return () => {
+  //     localStorage.setItem("scrollY", window.scrollY.toString());
+  //   };
+  // }, []);
 
   const detail = AllProjectDetail.find((p) => p.slug === slug);
   if (!detail) return null;
@@ -52,33 +57,26 @@ const ProjectDetail = () => {
             className="flex flex-col items-center justify-center max-w-2xl w-full p-8"
           >
             <h1 className="text-4xl text-white font-bold">{detail.title}</h1>
-            {/* <h2 className="text-md text-gray-700 mb-4">{data.subtitle}</h2> */}
             <p className="text-md mb-4 text-gray-300">{detail.period}</p>
             <img
               src={detail.image}
               alt={detail.title}
               className="w-full max-w-xl rounded-md mb-8"
-            />{" "}
-            <img
-              src={detail.image}
-              alt={detail.title}
-              className="w-full max-w-xl rounded-md mb-8"
-            />{" "}
-            <img
-              src={detail.image}
-              alt={detail.title}
-              className="w-full max-w-xl rounded-md mb-8"
             />
-            <h3 className="text-xl mb-20">{detail.subtitle}</h3>
-            <div className="flex items-center justify-center flex-wrap gap-2 border-t border-gray-500 w-full max-w-3xl">
-              {detail.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="bg-gray-200 px-2 py-1 rounded text-sm"
-                >
-                  {skill}
-                </span>
-              ))}
+            <h3 className="text-xl font-semibold mb-4">{detail.subtitle}</h3>
+            <div className="flex gap-4 bg-white p-2 rounded-xl shadow-xl">
+              {detail.skills.map((name) => {
+                const skill = SkillsData.find((s) => s.name === name);
+
+                return skill ? (
+                  <img
+                    key={name}
+                    src={skill.src}
+                    alt={skill.alt}
+                    className="h-10 w-10"
+                  />
+                ) : null;
+              })}
             </div>
           </div>
         </Glassmorphism>

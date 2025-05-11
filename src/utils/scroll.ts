@@ -1,9 +1,13 @@
-let savedScrollY = 0;
-
+// 이전페이지 기억
 export const saveScrollY = () => {
-  savedScrollY = window.scrollY;
+  localStorage.setItem("scrollY", window.scrollY.toString());
 };
 
 export const restoreScrollY = () => {
-  window.scrollTo(0, savedScrollY);
+  const savedY = localStorage.getItem("scrollY");
+  if (savedY) {
+    setTimeout(() => {
+      window.scrollTo(0, parseInt(savedY, 10));
+    }, 50);
+  }
 };
