@@ -1,3 +1,5 @@
+import scrollbarHide from "tailwind-scrollbar-hide";
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -64,7 +66,6 @@ module.exports = {
         },
       });
     },
-    require("tailwind-scrollbar"),
   ],
 };
 

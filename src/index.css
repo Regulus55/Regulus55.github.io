@@ -23,3 +23,15 @@ body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.5;
 }
+
+/* 스크롤 없애기 */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
