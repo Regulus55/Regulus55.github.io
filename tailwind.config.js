@@ -43,6 +43,16 @@ module.exports = {
           #FFA170 87%,
           #FFE4C4 100%
         )`,
+        "orange-sky": `linear-gradient(
+          to bottom,
+          #C26129 0%,
+          #CD672E 17%,
+          #D67643 33%,
+          #E0855B 50%,
+          #EDA174 66%,
+          #F8C49E 83%,
+          #FFE4C4 100%
+        )`,
       },
     },
   },
@@ -54,6 +64,7 @@ module.exports = {
         },
       });
     },
+    require("tailwind-scrollbar"),
   ],
 };
 

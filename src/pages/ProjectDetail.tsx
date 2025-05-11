@@ -3,6 +3,8 @@ import { ProjectData } from "../data/ProjectData";
 import { useEffect } from "react";
 import { restoreScrollY } from "../utils/scroll";
 import { useThemeStore } from "../store/useThemeStore";
+import Glassmorphism from "../components/wrapper/Glassmorphism";
+import AllProjectDetail from "../data/projectDetail";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -35,32 +37,32 @@ const ProjectDetail = () => {
     };
   }, []);
 
-  const data = ProjectData.find((item) => item.slug === slug);
-  if (!data) return null;
+  const detail = AllProjectDetail.find((p) => p.slug === slug);
+  if (!detail) return null;
 
   return (
     <div
       className={`fixed inset-0 ${
-        isDayMode ? "bg-blue-400/70" : "bg-orange-400/70"
+        isDayMode ? "bg-day-sky" : "bg-orange-sky"
       } backdrop-blur-sm flex justify-center items-center z-50`}
       onClick={() => navigate(-1)}
     >
-      <div
-        className="relative bg-white p-8 rounded-xl max-w-7xl w-full h-aotu shadow-lg opacity-90"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex flex-col items-center justify-center w-full h-full">
+      <Glassmorphism className="relative rounded-xl max-w-7xl w-full h-auto m-20 max-h-[90vh] overflow-y-auto scrollbar-none">
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="flex flex-col items-center justify-center w-full h-full p-8"
+        >
+          <h1 className="text-4xl text-white font-bold">{detail.title}</h1>
+          {/* <h2 className="text-md text-gray-700 mb-4">{data.subtitle}</h2> */}
+          <p className="text-md mb-4 text-gray-300">{detail.period}</p>
           <img
-            src={data.image}
-            alt={data.title}
-            className="w-40 rounded-md mb-4"
+            src={detail.image}
+            alt={detail.title}
+            className="w-full max-w-xl rounded-md mb-4"
           />
-          <h1 className="text-2xl font-bold mb-2">{data.title}</h1>
-          <h2 className="text-md text-gray-600 mb-4">{data.subtitle}</h2>
-          <p className="text-sm mb-2 text-gray-500">{data.period}</p>
-          <p className="mb-4">{data.content}</p>
           <div className="flex gap-2 flex-wrap">
-            {data.skills.map((skill) => (
+            0
+            {detail.skills.map((skill) => (
               <span
                 key={skill}
                 className="bg-gray-200 px-2 py-1 rounded text-sm"
@@ -70,7 +72,7 @@ const ProjectDetail = () => {
             ))}
           </div>
         </div>
-      </div>
+      </Glassmorphism>
     </div>
   );
 };

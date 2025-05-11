@@ -6,8 +6,6 @@ import Contact from "./contents/Contact";
 import Profile from "./contents/Profile";
 import Project from "./contents/Project";
 import Skills from "./contents/Skills";
-import FloatingButton from "./FloatingButton";
-import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 
 const section = [
@@ -21,7 +19,7 @@ const section = [
 const Home = () => {
   return (
     <div className="relative w-full h-full overflow-x-hidden">
-      <div className="relative h-[100vh] z-0 ">
+      <div className="relative h-[100vh] z-0">
         <HeroSection />
       </div>
 
