@@ -3,9 +3,9 @@ import { ProjectDetail } from "../../utils/types";
 export const PortfolioDetail: ProjectDetail = {
   slug: "portfolio",
   title: "포트폴리오",
-  subtitle: "웹으로 만들어진 내가 만든 내 세상",
+  subtitle: "웹으로 만든 내가 만든 내 세상",
   period: "2025.04 ~ 진행중",
-  image: "images/project/portfolio/main.PNG",
+  image: "images/project/portfolio/main.png",
   overview: [
     {
       title: "프로젝트 기획 이유",
@@ -41,9 +41,9 @@ export const PortfolioDetail: ProjectDetail = {
     {
       title: "추후 추가할 내용",
       content: [
+        "Hero Section에 들어갈 커버 이미지 제작",
         "반응형 UI 지원",
         "Footer 영역의 산과 구름 이미지에도 Parallax 효과 적용",
-        "Hero Section에 들어갈 커버 이미지 제작",
         "전체적인 UI 세부 개선"
       ]
     },

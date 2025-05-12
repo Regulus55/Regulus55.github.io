@@ -52,17 +52,19 @@ const Project = () => {
                   <div className="text-lg text-gray-700 font-semibold">
                     {project.content}
                   </div>
-                  <div className="flex mt-4 gap-4">
+                  <div className="flex mt-4 gap-2">
                     {project.skills.map((name) => {
                       const skill = SkillsData.find((s) => s.name === name);
 
                       return skill ? (
-                        <img
-                          key={name}
-                          src={skill.src}
-                          alt={skill.alt}
-                          className="h-8 w-8"
-                        />
+                        <div className="flex items-center justify-center h-12 w-12 bg-black/10 rounded-full overflow-hidden">
+                          <img
+                            key={name}
+                            src={skill.src}
+                            alt={skill.alt}
+                            className="h-10 w-10"
+                          />
+                        </div>
                       ) : null;
                     })}
                   </div>

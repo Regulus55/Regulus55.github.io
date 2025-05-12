@@ -6,7 +6,7 @@ export const ProjectData = [
     period: "2025.04 ~ 진행중",
     content:
       "나만의 포트폴리오 사이트를 만들기 위해 제작했습니다. TypeScript 와 Tailwind CSS 를 사용해 만들었으며, 반응형 디자인을 적용할 예정입니다.",
-    skills: ["React", "TypeScript", "Tailwind CSS"],
+    skills: ["React", "TypeScript", "Tailwind CSS","Zustand"],
     image: "images/project/portfolio/main.png",
   },
   {

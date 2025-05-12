@@ -4,8 +4,8 @@ export const NarakDetail: ProjectDetail = {
   slug: "narak",
   title: "Narak - 나락",
   subtitle: "친구들과 주식투자 연습을 위한 모의주식투자 사이트",
-  period: "2025.04 ~ 진행중",
-  image: "images/project/narak/main.PNG",
+  period: "2024.11 ~ 진행중",
+  image: "images/project/narak/main.png",
   overview: [
     {
       title: "프로젝트 기획 이유",
@@ -13,12 +13,12 @@ export const NarakDetail: ProjectDetail = {
     },
     {
       title: "프로젝트 기간",
-      content: ["2024.11.30 ~ 현재 진행중"]
+      content: ["2024.11 ~ 현재 진행중"]
     },
     {
       title: "개발스택",
       content: [
-        "프론트엔드 : React, JavaScript, TypeScript, react-query, context-api, react-hook-form 등)",
+        "프론트엔드 : React, JavaScript, TypeScript",
         "백엔드(현재 인증기능만) : Firebase",
         "스타일링 : Tailwind CSS",
         "상태관리 : Tanstack Query, Context API",
