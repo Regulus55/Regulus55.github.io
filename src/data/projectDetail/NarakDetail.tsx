@@ -5,46 +5,31 @@ export const NarakDetail: ProjectDetail = {
   title: "Narak - 나락",
   subtitle: "친구들과 주식투자 연습을 위한 모의주식투자 사이트",
   period: "2025.04 ~ 진행중",
-  // skills: ["React", "TypeScript", "Tailwind CSS", "Tanstack Query", "Firebase"],
   image: "images/project/narak/main.PNG",
-  stacks: [
-    {
-      title: "프론트엔드",
-      stack: ["React", "JavaScript", "TypeScript"],
-    },
-    {
-      title: "스타일링",
-      stack: ["Tailwind CSS"],
-    },
-    {
-      title: "상태 관리",
-      stack: ["Tanstack Query", "Firebase"],
-    },
-    {
-      title: "폼 관리",
-      stack: ["React Hook Form"],
-    },
-  ],
   overview: [
     {
       title: "프로젝트 기획 이유",
-      content: ["주식투자를 좋아하는 친구들과 함께 모의 주식 투자를 하기 위함으로, 가상의 돈으로 주식을 원하는 만큼 매수하고, 주식투자에 자부심이 있는 친구들과 투자 실력을 겨루기 위함."]
+      content: ["주식투자를 좋아하는 친구들과 함께 모의주식으로 투자 실력을 겨루기 위해 만들었습니다."]
     },
     {
       title: "프로젝트 기간",
-      content: ["2024.11.30 ~ 현재 진행중 (첫 init 후 진행하지 못하다가 2025.02 부터 다시 진행중)"]
+      content: ["2024.11.30 ~ 현재 진행중"]
     },
     {
       title: "개발스택",
       content: [
-        "프론트엔드: TypeScript, Tailwind CSS (react-query, context-api, react-hook-form 등)",
-        "백엔드(현재 인증기능만): Firebase",
-        "주식 데이터 API: Finhub, Twelve Data"
+        "프론트엔드 : React, JavaScript, TypeScript, react-query, context-api, react-hook-form 등)",
+        "백엔드(현재 인증기능만) : Firebase",
+        "스타일링 : Tailwind CSS",
+        "상태관리 : Tanstack Query, Context API",
+        "폼관리 : React Hook Form",
+        "주식 데이터 API : Finhub, Twelve Data"
       ]
     },
     {
       title: "특징",
       content: [
+        "실제 주식 데이터 기반으로 실제와 유사한 거래 환경 제공",
         "주로 스마트폰으로 접속할 상황이 많을것으로 예상하여 모바일화면을 기준으로 제작중.",
         "주식의 현재 가격과 수량을 단순히 곱해 구매하여, 모의계좌에서 해당 금액만큼 빼는 단순한 방식으로 기획.",
         "Firebase 로 백엔드 구성 (추후 모의계좌, 채팅 기능 등 데이터베이스도 Firebase로 구성예정)",

@@ -20,7 +20,6 @@ export interface ProjectDetail {
   subtitle: string;
   period: string;
   image: string;
-  stacks?: Stack[]; 
   overview?: Overview[];
   preview?: Preview[];
 }
