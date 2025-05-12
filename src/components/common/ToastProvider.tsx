@@ -15,7 +15,7 @@ const ToastProvider = () => {
       // pauseOnHover
       theme="colored"
       toastClassName={() =>
-        "flex flex-col items-center justify-center border-2 border-gray-500 bg-white text-gray-500 font-bold text-lg rounded-lg p-4 my-0.5"
+        "flex flex-col items-center justify-center bg-black/30 text-white font-bold text-lg rounded-lg p-4 my-0.5"
       }
     />
   );

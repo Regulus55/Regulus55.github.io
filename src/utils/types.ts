@@ -5,7 +5,7 @@ export interface Stack {
 
 export interface Overview {
   title: string;
-  content: string;
+  content: string[];
 }
 
 export interface Preview {
@@ -20,7 +20,6 @@ export interface ProjectDetail {
   subtitle: string;
   period: string;
   image: string;
-  stacks?: Stack[]; 
   overview?: Overview[];
   preview?: Preview[];
 }

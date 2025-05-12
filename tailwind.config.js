@@ -61,6 +61,9 @@ module.exports = {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
+        ".text-greyShadow": {
+          textShadow: "4px 4px #757575",
+        },
         ".text-grayShadow": {
           textShadow: "6px 6px #757575",
         },
