@@ -14,7 +14,7 @@ const BaseIconButton = ({
   title,
 }: BaseIconButtonProps) => {
   const commonClass =
-    "w-14 h-14 rounded-full flex items-center justify-center shadow-xl bg-white border-4 border-gray-700 hover:scale-105";
+    "w-12 h-12 rounded-full flex items-center justify-center shadow-xl bg-white border-4 border-gray-700 hover:scale-105";
 
   if (href) {
     return (

@@ -14,7 +14,7 @@ const AboutMe = () => {
             <ScrollReveal key={index} direction="left">
               <Glassmorphism className="p-10">
                 <h4 className="text-3xl font-bold mb-2">{data.title}</h4>
-                <div className="text-lg text-gray-300">{data.content}</div>
+                <p className="text-lg text-gray-300">{data.content}</p>
               </Glassmorphism>
             </ScrollReveal>
           ))}
