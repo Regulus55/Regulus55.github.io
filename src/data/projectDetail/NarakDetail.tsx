@@ -58,6 +58,7 @@ export const NarakDetail: ProjectDetail = {
         "현재 영어로 된 주식 심볼로만 검색이 가능하나, 추후 한글로 검색해도 자동으로 맞는 주식 심볼을 검색해주는 기능을 추가할 예정",
         "실제 주식 거래의 복잡한 요소들을 반영하여 더 현실감 있는 투자 환경이 되도록 개선할 예정"
       ]
+
     }
   ],
   preview: [
@@ -68,3 +69,4 @@ export const NarakDetail: ProjectDetail = {
     }
   ]
 };
+
