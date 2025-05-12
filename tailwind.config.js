@@ -1,3 +1,5 @@
+import scrollbarHide from "tailwind-scrollbar-hide";
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -19,6 +21,8 @@ module.exports = {
         45: "45",
         46: "46",
         47: "47",
+        48: "48",
+        49: "49",
       },
       backgroundImage: {
         "day-sky": `linear-gradient(
@@ -39,6 +43,16 @@ module.exports = {
           #A55C78 51%, 
           #D67A5A 68%,
           #FFA170 87%,
+          #FFE4C4 100%
+        )`,
+        "orange-sky": `linear-gradient(
+          to bottom,
+          #C26129 0%,
+          #CD672E 17%,
+          #D67643 33%,
+          #E0855B 50%,
+          #EDA174 66%,
+          #F8C49E 83%,
           #FFE4C4 100%
         )`,
       },

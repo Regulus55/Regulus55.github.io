@@ -9,7 +9,7 @@ export const FloatingIcon: Record<string, IconType> = {
 };
 
 export const FloatingData = [
-    { key: "blog", name: "블로그", value: "velog.io/@regulus", type: "url" },
-    { key: "github", name: "깃허브", value: "github.com/Regulus55", type: "url" },
-    { key: "top", name: "맨위로", value: "regulus55.github.io", type: "scroll" },
+    { key: "blog", title: "블로그", value: "velog.io/@regulus", type: "url" },
+    { key: "github", title: "깃허브", value: "github.com/Regulus55", type: "url" },
+    { key: "top", title: "맨위로", value: "regulus55.github.io", type: "scroll" },
 ]

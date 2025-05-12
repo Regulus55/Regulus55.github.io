@@ -9,7 +9,7 @@ type IconProps = {
 
 const Profile = () => {
   return (
-    <div className="relative flex flex-col items-start justify-center w-full max-w-7xl h-full p-10 rounded-3xl mt-52">
+    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl mt-52">
       <h1 className="text-7xl font-bold text-white ml-6 mb-6 text-grayShadow">
         PROFILE
       </h1>
@@ -22,7 +22,7 @@ const Profile = () => {
           />
         </div>
         <div className={"flex flex-col items-left justify-center text-3xl"}>
-          {ProfileData.map(({ key, value, type }) => {
+          {ProfileData.map(({ key, title, value, type }) => {
             const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
 
             const handleClick = () => {
@@ -38,16 +38,17 @@ const Profile = () => {
               content = (
                 <a
                   href={`https://${value}`}
+                  title={title}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline"
+                  className="hover:text-gray-200"
                 >
                   {value}
                 </a>
               );
             } else {
               content = (
-                <button onClick={handleClick} className="hover:underline">
+                <button onClick={handleClick} title={title} className="hover:text-gray-200" >
                   {value}
                 </button>
               );

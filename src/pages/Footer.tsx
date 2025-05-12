@@ -9,7 +9,7 @@ const Footer = () => {
         <img
           src={
             isDayMode
-              ? "/images/background/dayall.png"
+              ? "/images/background/dayall2.png"
               : "/images/background/sunsetall.png"
           }
           alt="cloud1"
