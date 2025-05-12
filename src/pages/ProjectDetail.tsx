@@ -5,7 +5,6 @@ import Glassmorphism from "../components/wrapper/Glassmorphism";
 import AllProjectDetail from "../data/projectDetail";
 import { Overview, Preview, Stack } from "../utils/types";
 
-
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { isDayMode } = useThemeStore();
@@ -31,7 +30,6 @@ const ProjectDetail = () => {
 
   return (
     <div className="relative text-white flex justify-center items-center w-full min-h-screen overflow-x-hidden xl:py-20">
-
       <div
         className={`fixed inset-0 w-full h-full bg-cover bg-center z-0 
           ${isDayMode ? "bg-day-sky" : "bg-orange-sky"}
@@ -41,7 +39,6 @@ const ProjectDetail = () => {
 
       <div className="relative max-w-7xl w-full min-h-screen z-10">
         <div className="flex items-center justify-center w-full rounded-xl p-6 z-20 bg-black/50">
-
           <div
             onClick={(e) => e.stopPropagation()}
             className="flex flex-col items-center justify-center w-full p-8"
@@ -104,18 +101,18 @@ const ProjectDetail = () => {
                     return (
                       <div
                         key={index}
-                        className="flex flex-col items-center justify-center w-96 mb-8"
+                        className="flex flex-col items-center justify-center w-96 mb-10"
                       >
                         <div className="text-xl font-bold mb-1">
                           {item.title}
                         </div>
                         <div className="mb-2">
                           {item.image?.map((element) => (
-                            <div className="w-96 h-96 overflow-hidden">
+                            <div className="w-96 h-96 overflow-hidden flex items-center justify-center">
                               <img
                                 src={element}
                                 alt={element}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                               />
                             </div>
                           ))}
