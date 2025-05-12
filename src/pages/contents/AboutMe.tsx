@@ -4,7 +4,7 @@ import { AboutMeData } from "../../data";
 
 const AboutMe = () => {
   return (
-    <div className="relative flex flex-col items-start justify-center w-full max-w-7xl h-full p-10 rounded-3xl">
+    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl">
       <h1 className="text-7xl font-bold text-white ml-8 mb-4 text-grayShadow">
         ABOUT ME
       </h1>
@@ -14,7 +14,7 @@ const AboutMe = () => {
             <ScrollReveal key={index} direction="left">
               <Glassmorphism className="p-10">
                 <h4 className="text-3xl font-bold mb-2">{data.title}</h4>
-                <div className="text-lg text-gray-300">{data.content}</div>
+                <p className="text-lg text-gray-300">{data.content}</p>
               </Glassmorphism>
             </ScrollReveal>
           ))}
