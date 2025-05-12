@@ -3,7 +3,7 @@ import { ProjectDetail } from "../../utils/types";
 export const PortfolioDetail: ProjectDetail = {
   slug: "portfolio",
   title: "포트폴리오",
-  subtitle: "웹으로 만든 내가 만든 내 세상",
+  subtitle: "웹으로 만들어진 내가 만든 내 세상",
   period: "2025.04 ~ 진행중",
   image: "images/project/portfolio/main.png",
   overview: [
@@ -60,7 +60,7 @@ export const PortfolioDetail: ProjectDetail = {
       title: "배경이미지",
       image: ["/images/project/portfolio/back.png"],
       content: [
-        "우주에서 내려오는 느낌이 들도록 남색부터 하늘색까지 그라데이션으로 색을 배치했습니다",
+        "우주에서 내려오는 느낌이 들도록 남색부터 하늘색까지 그라데이션을 사용했습니다",
       ],
     },
     {
@@ -71,9 +71,7 @@ export const PortfolioDetail: ProjectDetail = {
     {
       title: "프로파일",
       image: ["/images/project/portfolio/profile.png"],
-      content: [
-        "이름, 전화번호, 이메일 주소 클릭 시 클립보드에 내용이 복사되도록 했습니다",
-      ],
+      content: ["이름, 전화번호, 이메일 주소를 클릭하면 클립보드에 복사됩니다"],
     },
     {
       title: "어바웃미",
@@ -83,22 +81,24 @@ export const PortfolioDetail: ProjectDetail = {
     {
       title: "프로젝트",
       image: ["/images/project/portfolio/project.png"],
-      content: ["클릭시 프로젝트 상세 페이지로 넘어갈 수 있습니다"],
+      content: ["클릭 시 프로젝트 상세 페이지로 이동할 수 있습니다"],
     },
     {
       title: "컨택트",
       image: ["/images/project/portfolio/contact.png"],
-      content: ["맨 아래 땅부분에 산과 구름 이미지를 배치했습니다"],
+      content: ["맨 아래 땅 부분에 산과 구름 이미지를 배치했습니다"],
     },
     {
       title: "프로젝트 상세페이지",
       image: ["/images/project/portfolio/detail.png"],
-      content: ["상세페이지에서 Overview, Preview 이미지를 볼 수 있습니다"],
+      content: [
+        "상세페이지에서 Overview와 Preview 이미지를 확인할 수 있습니다",
+      ],
     },
     {
       title: "저녁하늘배경",
       image: ["/images/project/portfolio/sunset.png"],
-      content: ["메인화면에서 제목 클릭 시 배경색이 변하도록 하였읍니다"],
+      content: [""],
     },
   ],
 };
