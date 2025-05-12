@@ -14,5 +14,5 @@ export const SkillsData = [
   { name: "Firebase", src: "images/icons/firebase.png", alt: "Firebase" },
   { name: "Github", src: "/images/icons/github.png", alt: "Github" },
   { name: "Figma", src: "/images/icons/figma.png", alt: "Figma" },
-  { name: "Zustand", src: "/images/icons/zustand.png", alt: "Zustand" },
+  { name: "Zustand", src: "/images/icons/zustand2.png", alt: "Zustand" },
 ];
