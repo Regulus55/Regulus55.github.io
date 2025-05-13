@@ -44,4 +44,11 @@ export const GushopDetail: ProjectDetail = {
       ]
     },
   ],
+  preview: [
+    {
+      title: "",
+      image: [],
+      content: []
+    }
+  ]
 };
