@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useThemeStore } from "../store/useThemeStore";
-import Glassmorphism from "../components/wrapper/Glassmorphism";
 import AllProjectDetail from "../data/projectDetail";
 import { Overview, Preview, Stack } from "../utils/types";
 
@@ -37,7 +36,7 @@ const ProjectDetail = () => {
         onClick={() => navigate(-1)}
       />
 
-      <div className="relative max-w-7xl w-full min-h-screen z-10">
+      <div className="relative xl:max-w-5xl 2xl:max-w-7xl w-full min-h-screen z-10">
         <div className="flex items-center justify-center w-full rounded-xl p-6 z-20 bg-black/50">
           <div
             onClick={(e) => e.stopPropagation()}
@@ -60,6 +59,46 @@ const ProjectDetail = () => {
             </div>
 
             <div
+              id="preview"
+              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500"
+            >
+              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
+                Preview
+              </h2>
+              <div className="grid grid-cols-2 place-items-center items-start w-full text-xl">
+                {Array.isArray(detail?.preview) &&
+                  detail?.preview?.map((item: Preview, index: number) => {
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center justify-center w-96 mb-10 bg-white/30 p-2 rounded-md"
+                      >
+                        <div className="text-xl font-bold mb-1">
+                          {item.title}
+                        </div>
+                        <div className="mb-2">
+                          {item.image?.map((element) => (
+                            <div className="w-96 h-96 overflow-hidden flex items-center justify-center">
+                              <img
+                                src={element}
+                                alt={element}
+                                className="w-full h-full object-contain p-2"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                        <div className="text-lg">
+                          {item.content?.map((element) => (
+                            <div className="flex gap-3">{element}</div>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+
+             <div
               id="overview"
               className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500"
             >
@@ -82,46 +121,6 @@ const ProjectDetail = () => {
                             </li>
                           ))}
                         </ul>
-                      </div>
-                    );
-                  })}
-              </div>
-            </div>
-
-            <div
-              id="preview"
-              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500"
-            >
-              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
-                Preview
-              </h2>
-              <div className="grid grid-cols-2 place-items-center items-start w-full text-xl">
-                {Array.isArray(detail?.preview) &&
-                  detail?.preview?.map((item: Preview, index: number) => {
-                    return (
-                      <div
-                        key={index}
-                        className="flex flex-col items-center justify-center w-96 mb-10"
-                      >
-                        <div className="text-xl font-bold mb-1">
-                          {item.title}
-                        </div>
-                        <div className="mb-2">
-                          {item.image?.map((element) => (
-                            <div className="w-96 h-96 overflow-hidden flex items-center justify-center">
-                              <img
-                                src={element}
-                                alt={element}
-                                className="w-full h-full object-contain"
-                              />
-                            </div>
-                          ))}
-                        </div>
-                        <div className="text-lg">
-                          {item.content?.map((element) => (
-                            <div className="flex gap-3">{element}</div>
-                          ))}
-                        </div>
                       </div>
                     );
                   })}
