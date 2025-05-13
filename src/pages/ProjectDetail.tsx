@@ -108,13 +108,11 @@ const ProjectDetail = () => {
                         </div>
                         <div className="mb-2">
                           {item.image?.map((element) => (
-                            <div className="w-96 h-96 overflow-hidden flex items-center justify-center">
-                              <img
-                                src={element}
-                                alt={element}
-                                className="w-full h-full object-contain"
-                              />
-                            </div>
+                            <img
+                              src={element}
+                              alt={element}
+                              className="w-full h-full object-contain my-1"
+                            />
                           ))}
                         </div>
                         <div className="text-lg">

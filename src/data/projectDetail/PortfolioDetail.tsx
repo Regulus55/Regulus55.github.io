@@ -1,6 +1,6 @@
 import { ProjectDetail } from "../../utils/types";
 
-export const PortfolioDetail: ProjectDetail = {
+export const PortfolioData: ProjectDetail = {
   slug: "portfolio",
   title: "포트폴리오",
   subtitle: "웹으로 만들어진 내가 만든 내 세상",

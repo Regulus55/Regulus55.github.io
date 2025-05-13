@@ -1,12 +1,12 @@
-import { PortfolioDetail } from "./PortfolioDetail";
-import { NarakDetail } from "./NarakDetail";
-import { GushopDetail } from "./GushopDetail";
+import { PortfolioData } from "./PortfolioDetail";
+import { NarakData } from "./NarakData";
+import { GushopData } from "./GushopData";
 import { ProjectDetail } from "../../utils/types";
 
-
-const AllProjectDetail: ProjectDetail[] = [PortfolioDetail, NarakDetail, GushopDetail];
+const AllProjectDetail: ProjectDetail[] = [
+  PortfolioData,
+  NarakData,
+  GushopData,
+];
 
 export default AllProjectDetail;
-
-
-
