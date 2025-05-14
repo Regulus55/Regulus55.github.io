@@ -20,7 +20,7 @@ Parallax와 그라데이션 효과를 활용하여 우주에서 지상으로 내
 - React Scroll Parallax를 활용해 배경의 별 이미지가 서로 다른 속도로 움직이는 시각 효과 구현
 - ScrollReveal을 사용해 스크롤 시 요소들이 자연스럽게 등장하고, Glassmorphism 기법을 적용해 반투명 배경과 블러 효과 구현
 - Zustand를 사용해 테마 배경 색상을 전역 상태로 관리 (예: day sky, sunset sky)  
-- 프로필 섹션에서 이메일, 전화번호 클릭 시 Clipboard API (`navigator.clipboard.writeText()`)를 이용한 클립보드 복사 기능 제공  
+- 프로필 섹션에서 이메일과 전화번호 클릭 시 Clipboard API (`navigator.clipboard.writeText()`)를 활용한 클립보드 복사 기능과, 복사 완료 시 Toastify를 이용한 알림 UI 제공
 
 
 
