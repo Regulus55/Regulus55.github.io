@@ -10,6 +10,7 @@ Parallax와 그라데이션 효과를 활용하여 우주에서 지상으로 내
 
 - **프로젝트명**: 포트폴리오 웹사이트
 - **개발 기간**: 2024.11.30 ~ 현재 진행중
+- **프로젝트 유형**: 개인프로젝트
 - **기획 의도**: 나의 프로젝트, 기술 역량, 정보를 시각적으로 소개할 수 있는 사이트 제작
 
 <br/>
@@ -52,7 +53,7 @@ Parallax와 그라데이션 효과를 활용하여 우주에서 지상으로 내
 ```bash
 git clone https://github.com/Regulus55/Regulus55.github.io.git
 
-cd narak
+cd Regulus55.github.io
 
 npm install
 
