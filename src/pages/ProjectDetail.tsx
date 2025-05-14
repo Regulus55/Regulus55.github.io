@@ -31,7 +31,7 @@ const ProjectDetail = () => {
     <div className="relative text-white flex justify-center items-center w-full min-h-screen overflow-x-hidden xl:py-20">
       <div
         className={`fixed inset-0 w-full h-full bg-cover bg-center z-0 
-          ${isDayMode ? "bg-day-sky" : "bg-orange-sky"}
+          ${isDayMode ? "bg-blue-sky" : "bg-orange-sky"}
         `}
         onClick={() => navigate(-1)}
       />
@@ -77,7 +77,7 @@ const ProjectDetail = () => {
                           {item.content?.map((element) => (
                             <li className="flex gap-3 ml-5">
                               {/* <span>●</span> */}
-                                <span>-</span>
+                              <span>-</span>
                               <span>{element}</span>
                             </li>
                           ))}
@@ -125,10 +125,10 @@ const ProjectDetail = () => {
                   })}
               </div>
             </div>
-          </div >
-        </div >
-      </div >
-    </div >
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
