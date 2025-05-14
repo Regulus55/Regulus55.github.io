@@ -32,7 +32,7 @@ Parallax와 ScrollReveal 효과를 활용하여 우주에서 지상으로 내려
 | **State**        | Zustand                                                              |
 | **Library**      | React Scroll Parallax, ScrollReveal, React Toastify                |
 
----
+
 
 ## 향후 계획 및 아쉬운 점
 
