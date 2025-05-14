@@ -16,10 +16,11 @@ Parallax와 그라데이션 효과를 활용하여 우주에서 지상으로 내
 
 ## 주요 기능
 
-- 스크롤에 따라 우주 → 지상으로 내려오는 느낌을 주는 레이아웃 구성
-- React Scroll Parallax, ScrollReveal, Glassmorphism 등의 시각 효과 적용
-- 프로젝트 카드 클릭 시 상세 페이지로 이동 가능
-- 프로필 영역에서 전화번호, 이메일 클릭 시 클립보드 복사 기능 제공
+- 스크롤에 따라 우주 → 지상으로 내려오는 느낌을 주는 레이아웃 구성  
+- React Scroll Parallax를 활용해 배경의 별 이미지가 서로 다른 속도로 움직이는 시각 효과 구현
+- ScrollReveal을 사용해 스크롤 시 요소들이 자연스럽게 등장하고, Glassmorphism 기법을 적용해 반투명 배경과 블러 효과 구현
+- Zustand를 사용해 테마 배경 색상을 전역 상태로 관리 (예: day sky, sunset sky)  
+- 프로필 섹션에서 이메일, 전화번호 클릭 시 Clipboard API (`navigator.clipboard.writeText()`)를 이용한 클립보드 복사 기능 제공  
 
 
 
