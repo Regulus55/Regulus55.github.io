@@ -67,23 +67,13 @@ export const NarakData: ProjectDetail = {
       title: "데스크탑 메인페이지",
       image: ["/images/project/narak/desktopmain.png"],
       content: [
-        "Narak 은 방패에 나락 글자를 넣은것으로 나락을 방지한다는 뜻입니다",
+        "Narak 은 방패에 나락 글자를 넣어 나락을 방지한다는 뜻을 가지고 있습니다",
       ],
     },
     {
       title: "메인페이지",
       image: ["/images/project/narak/home.png"],
-      content: [""],
-    },
-    {
-      title: "주식심볼 검색창",
-      image: ["/images/project/narak/searchstock.png"],
-      content: ["NVDA, TSLA 등 주식 심볼로 주식검색 가능합니다"],
-    },
-    {
-      title: "유저",
-      image: ["/images/project/narak/user.png"],
-      content: ["파이어베이스로 만든 로그인, 로그아웃, 프로필 등 기능"],
+      content: ["사이트 방문 시 보이는 메인 페이지입니다"],
     },
     {
       title: "주식 상세페이지",
@@ -98,7 +88,25 @@ export const NarakData: ProjectDetail = {
       content: [
         "타 주식 사이트에서 해외 주식 거래 시 현재 환율을 빠르게 볼 수 있는 방법이 없어 불편함을 느꼈고, 주식 상세 페이지에서 바로 환율을 확인 할 수 있도록 만들었습니다",
         "(현재 환율은 목데이터 입니다)",
+
       ],
+    },
+    {
+      title: "주식심볼 검색창",
+      image: ["/images/project/narak/searchstock.png"],
+      content: ["NVDA, TSLA 등 심볼로 주식검색 가능합니다"],
+    },
+    {
+      title: "검색기록 저장",
+      image: ["/images/project/narak/localstorage.png"],
+      content: [
+        "주식 검색 시 기록이 저장되며, localStorage(visitedPages)와 연동되어 사이트 재방문 시에도 유지됩니다.",
+      ],
+    },
+    {
+      title: "유저",
+      image: ["/images/project/narak/user.png"],
+      content: ["파이어베이스로 만든 로그인, 로그아웃, 프로필 등 기능"],
     },
   ],
 };

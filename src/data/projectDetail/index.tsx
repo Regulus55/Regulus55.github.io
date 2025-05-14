@@ -1,4 +1,4 @@
-import { PortfolioData } from "./PortfolioDetail";
+import { PortfolioData } from "./PortfolioData";
 import { NarakData } from "./NarakData";
 import { GushopData } from "./GushopData";
 import { ProjectDetail } from "../../utils/types";
@@ -8,5 +8,6 @@ const AllProjectDetail: ProjectDetail[] = [
   NarakData,
   GushopData,
 ];
+
 
 export default AllProjectDetail;

@@ -60,7 +60,7 @@ export const PortfolioData: ProjectDetail = {
       title: "배경이미지",
       image: ["/images/project/portfolio/back.png"],
       content: [
-        "우주에서 내려오는 느낌이 들도록 남색부터 하늘색까지 그라데이션을 사용했습니다",
+        "우주에서 지상으로 내려오는 느낌을 주기 위해 남색에서 하늘색으로 그라데이션을 사용했습니다",
       ],
     },
     {
