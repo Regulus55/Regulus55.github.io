@@ -9,7 +9,7 @@ type IconProps = {
 
 const Profile = () => {
   return (
-    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl mt-52">
+    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl mt-52 mb-20">
       <h1 className="text-7xl font-bold text-white ml-6 mb-6 text-grayShadow">
         PROFILE
       </h1>

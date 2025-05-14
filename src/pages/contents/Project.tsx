@@ -62,6 +62,7 @@ const Project = () => {
                             key={name}
                             src={skill.src}
                             alt={skill.alt}
+                            title={name}
                             className="h-10 w-10 object-contain"
                           />
                         </div>
