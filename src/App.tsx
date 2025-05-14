@@ -10,9 +10,10 @@ const App = () => {
     <>
       <ToastProvider />
       <Outlet />
-      {isHome && (
-        <>
+      
           <FloatingButton />
+          {isHome && (
+        <>
           <Footer />
         </>
       )}
