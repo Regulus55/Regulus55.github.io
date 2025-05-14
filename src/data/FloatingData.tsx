@@ -10,27 +10,53 @@ export const FloatingIcon: Record<string, IconType> = {
 };
 
 export const projectLinks = {
-  portfolio: "regulus55.github.io",
-  narak: "narak-9a858.web.app",
-  gushop: "",
+  portfolio: {
+    link: "regulus55.github.io",
+    github: "github.com/Regulus55/Regulus55.github.io",
+    blog: "velog.io/@regulus/portfolio-post",
+  },
+  narak: {
+    link: "narak-9a858.web.app",
+    github: "github.com/Regulus55/narak",
+    blog: "",
+  },
+  gushop: {
+    link: "",
+    github: "github.com/Regulus55/gu-shop",
+    blog: "",
+  },
 } as const;
 
+
 export const FloatingDetailData = (slug: string) => {
-  const url = projectLinks[slug as keyof typeof projectLinks];
+  const project = projectLinks[slug as keyof typeof projectLinks];
+
+  if (!project) return [];
 
   const data = [
-    ...(url ? [{
+    ...(project.link ? [{
       key: "link",
       title: "링크",
-      value: url,
+      value: project.link,
       type: "url",
     }] : []),
-    { key: "github", title: "깃허브", value: "github.com/Regulus55", type: "url" },
-    { key: "blog", title: "블로그", value: "velog.io/@regulus", type: "url" },
+    ...(project.github ? [{
+      key: "github",
+      title: "깃허브",
+      value: project.github,
+      type: "url",
+    }] : []),
+    ...(project.blog ? [{
+      key: "blog",
+      title: "블로그",
+      value: project.blog,
+      type: "url",
+    }] : []),
   ];
 
   return data;
 };
+
 
 
 export const FloatingHomeData = [

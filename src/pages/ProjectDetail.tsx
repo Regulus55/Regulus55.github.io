@@ -59,6 +59,36 @@ const ProjectDetail = () => {
             </div>
 
             <div
+              id="overview"
+              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500"
+            >
+              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
+                Overview
+              </h2>
+              <div className="flex flex-col text-xl p-2 gap-6">
+                {Array.isArray(detail?.overview) &&
+                  detail?.overview?.map((item: Overview, index: number) => {
+                    return (
+                      <div key={index}>
+                        <div className="text-xl font-bold mb-1">
+                          {index + 1}. {item.title}
+                        </div>
+                        <ul className="text-lg">
+                          {item.content?.map((element) => (
+                            <li className="flex gap-3 ml-5">
+                              {/* <span>●</span> */}
+                                <span>-</span>
+                              <span>{element}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+
+            <div
               id="preview"
               className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500"
             >
@@ -90,35 +120,6 @@ const ProjectDetail = () => {
                             <div className="flex gap-3">{element}</div>
                           ))}
                         </div>
-                      </div>
-                    );
-                  })}
-              </div>
-            </div>
-
-            <div
-              id="overview"
-              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500"
-            >
-              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
-                Overview
-              </h2>
-              <div className="flex flex-col text-xl p-2 gap-6">
-                {Array.isArray(detail?.overview) &&
-                  detail?.overview?.map((item: Overview, index: number) => {
-                    return (
-                      <div key={index}>
-                        <div className="text-xl font-bold mb-1">
-                          {index + 1}. {item.title}
-                        </div>
-                        <ul className="text-lg">
-                          {item.content?.map((element) => (
-                            <li className="flex gap-3 ml-5">
-                              {/* <span>●</span> */}
-                              <span>{element}</span>
-                            </li>
-                          ))}
-                        </ul>
                       </div>
                     );
                   })}

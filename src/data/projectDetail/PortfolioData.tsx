@@ -3,7 +3,7 @@ import { ProjectDetail } from "../../utils/types";
 export const PortfolioData: ProjectDetail = {
   slug: "portfolio",
   title: "포트폴리오",
-  subtitle: "웹으로 만들어진 내가 만든 내 세상",
+  subtitle: "웹으로 만든 내가 만든 내 세상",
   period: "2025.04 ~ 진행중",
   image: "images/project/portfolio/main.png",
   overview: [
@@ -92,7 +92,7 @@ export const PortfolioData: ProjectDetail = {
       title: "프로젝트 상세페이지",
       image: ["/images/project/portfolio/detail.png"],
       content: [
-        "상세페이지에서 Overview와 Preview 이미지를 확인할 수 있습니다",
+        "상세페이지에서 프로젝트의 상세 내용과 이미지를 확인할 수 있습니다",
       ],
     },
     {
