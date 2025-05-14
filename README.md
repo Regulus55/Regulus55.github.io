@@ -50,9 +50,9 @@ Parallax와 그라데이션 효과를 활용하여 우주에서 지상으로 내
 ## 실행 방법
 
 ```bash
-git clone https://github.com/your-username/your-portfolio-repo.git
+git clone https://github.com/Regulus55/Regulus55.github.io.git
 
-cd your-portfolio-repo
+cd narak
 
 npm install
 
