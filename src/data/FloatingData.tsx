@@ -13,7 +13,7 @@ export const projectLinks = {
   portfolio: {
     link: "regulus55.github.io",
     github: "github.com/Regulus55/Regulus55.github.io",
-    blog: "velog.io/@regulus/portfolio-post",
+    blog: "velog.io/@regulus/series/포트폴리오",
   },
   narak: {
     link: "narak-9a858.web.app",
