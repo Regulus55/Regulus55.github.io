@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div className="relative w-full h-full overflow-x-hidden">
       <div className="relative h-[100vh] z-0">
-        <HeroSection />
+        <HeroSection scrollToSection={scrollToSection}/>
       </div>
 
       <div className="fixed top-0 left-0 z-50">

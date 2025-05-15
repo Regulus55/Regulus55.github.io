@@ -1,6 +1,12 @@
+import { SectionName } from "../hooks/useScrollToSection";
 import { useThemeStore } from "../store/useThemeStore";
 
-const HeroSection = () => {
+
+interface HeroSectionProps {
+  scrollToSection: (section: SectionName) => void;
+}
+
+const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   const { toggleTheme } = useThemeStore();
 
   return (
@@ -17,6 +23,7 @@ const HeroSection = () => {
         >
           프론트엔드 개발자 김학준 입니다
         </h1>
+        <h2 onClick={()=>scrollToSection("profile")}>안녕하세요</h2>
       </div>
     </div>
   );
