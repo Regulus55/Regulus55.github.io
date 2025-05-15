@@ -32,7 +32,7 @@ const FloatingButton = () => {
 
         const props =
           type === "scroll"
-            ? { onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }) }
+            ? { onClick: () => window.scrollTo({ top: 0, behavior: "auto" }) }
             : {
                 href: `https://${value}`,
                 target: "_blank",
