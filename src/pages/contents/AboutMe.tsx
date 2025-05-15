@@ -4,7 +4,7 @@ import { AboutMeData } from "../../data";
 
 const AboutMe = () => {
   return (
-    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl">
+    <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl mt-100">
       <h1 className="text-7xl font-bold text-white ml-8 mb-4 text-grayShadow">
         ABOUT ME
       </h1>

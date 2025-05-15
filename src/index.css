@@ -35,6 +35,7 @@ body {
 ::-webkit-scrollbar-track {
   background: transparent;
 } */
-/* html {
+html {
   scroll-behavior: auto !important;
-} */
+}
+

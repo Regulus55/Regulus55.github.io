@@ -57,4 +57,5 @@ cd Regulus55.github.io
 
 npm install
 
-npm run dev
+npm start
+

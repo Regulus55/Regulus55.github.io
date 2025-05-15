@@ -1,12 +1,19 @@
+import { SectionName } from "../hooks/useScrollToSection";
 import { useThemeStore } from "../store/useThemeStore";
 
-const HeroSection = () => {
+
+interface HeroSectionProps {
+  scrollToSection: (section: SectionName) => void;
+}
+
+const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   const { toggleTheme } = useThemeStore();
 
   return (
     <div className="fixed top-0 left-0 w-full h-screen">
       <img
-        src="/images/background/nat.jpg"
+        src="/images/background/moon.jpg"
+        // src="/images/background/moon2.png"
         alt="Background"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
@@ -17,6 +24,7 @@ const HeroSection = () => {
         >
           프론트엔드 개발자 김학준 입니다
         </h1>
+        {/* <h2 onClick={() => scrollToSection("profile")}>안녕하세요</h2> */}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { SkillsData } from "../../data";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-start justify-center w-full h-full p-10 rounded-3xl mb-20">
+    <div className="flex flex-col items-start justify-center w-full h-full p-10 rounded-3xl mt-40 mb-52">
       <h1 className="text-7xl font-bold text-white ml-8 mb-8 text-grayShadow">
         SKILLS
       </h1>
