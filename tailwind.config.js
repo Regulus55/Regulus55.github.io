@@ -38,7 +38,7 @@ module.exports = {
         )`,
         "sunset-sky": `linear-gradient(
           to bottom,
-          #09090B 0%,
+          #020202 0%,
           #010037 4%,
           #43387A 20%,
           #6A4D88 36%, 

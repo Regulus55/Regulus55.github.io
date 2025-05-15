@@ -1,16 +1,12 @@
 import { useThemeStore } from "../store/useThemeStore";
 
 const HeroSection = () => {
-  const { isDayMode, toggleTheme } = useThemeStore();
+  const { toggleTheme } = useThemeStore();
 
   return (
     <div className="fixed top-0 left-0 w-full h-screen">
       <img
-        src={
-          isDayMode
-            ? "/images/background/moon.jpg"
-            : "/images/background/moon2.jpg"
-        }
+        src="/images/background/moon.jpg"
         alt="Background"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />

@@ -33,7 +33,7 @@ const ProjectDetail = () => {
         className={`fixed inset-0 w-full h-full bg-cover bg-center z-0 
           ${isDayMode ? "bg-blue-sky" : "bg-orange-sky"}
         `}
-        onClick={() => navigate(-1)}
+        onClick={() => navigate('/')}
       />
 
       <div className="relative xl:max-w-5xl 2xl:max-w-7xl w-full min-h-screen z-10">
@@ -76,8 +76,7 @@ const ProjectDetail = () => {
                         <ul className="text-lg">
                           {item.content?.map((element) => (
                             <li className="flex gap-3 ml-5">
-                              {/* <span>●</span> */}
-                              <span>-</span>
+                              <span>•</span>
                               <span>{element}</span>
                             </li>
                           ))}

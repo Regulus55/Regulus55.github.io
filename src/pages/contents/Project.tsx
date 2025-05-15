@@ -15,7 +15,7 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-60">
+    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
       <h1 className="w-full text-7xl text-center font-bold text-white ml-8 mb-8 text-grayShadow">
         PROJECT
       </h1>
