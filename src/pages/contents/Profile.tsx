@@ -1,29 +1,25 @@
 import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../../data/ProfileData";
-import Glassmorphism from "../../components/wrapper/Glassmorphism";
-
-type IconProps = {
-  size?: number;
-  className?: string;
-};
+import { ContentsTitle, Glassmorphism } from "../../components";
+import { ReactIconProps } from "../../utils/types";
 
 const Profile = () => {
   return (
     <div className="relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-10 rounded-3xl mt-52 mb-40">
-      <h1 className="text-7xl font-bold text-white ml-6 mb-6 text-grayShadow">
-        PROFILE
-      </h1>
+      <ContentsTitle className="ml-6 mb-6">PROFILE</ContentsTitle>
       <Glassmorphism className="relative flex items-center justify-start w-auto pr-60 py-10 pl-6">
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
           <img
-            src="/images/내달사진.jpg"
-            alt="pic"
+            src="/images/regulus.jpg"
+            alt=""
             className="h-60 w-60 rounded-full p-4"
           />
         </div>
         <div className={"flex flex-col items-left justify-center text-3xl"}>
           {ProfileData.map(({ key, title, value, type }) => {
-            const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
+            const Icon = ProfileIcon[
+              key
+            ] as React.ComponentType<ReactIconProps>;
 
             const handleClick = () => {
               if (type === "copy") {
@@ -37,6 +33,7 @@ const Profile = () => {
             if (type === "url") {
               content = (
                 <a
+                  key={title}
                   href={`https://${value}`}
                   title={title}
                   target="_blank"
@@ -48,7 +45,12 @@ const Profile = () => {
               );
             } else {
               content = (
-                <button onClick={handleClick} title={title} className="hover:text-gray-200" >
+                <button
+                  key={title}
+                  onClick={handleClick}
+                  title={title}
+                  className="hover:text-gray-200"
+                >
                   {value}
                 </button>
               );

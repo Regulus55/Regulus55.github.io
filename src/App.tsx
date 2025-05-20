@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import ToastProvider from "./components/common/ToastProvider";
-import { FloatingButton, Footer, SectionNavigation } from "./pages";
+import { FloatingButton, Footer } from "./components";
 
 const App = () => {
   const location = useLocation();
@@ -12,10 +12,7 @@ const App = () => {
       <Outlet />
       <FloatingButton />
       {isHome && (
-        <>
-        
-          <Footer />
-        </>
+        <Footer />
       )}
     </>
   );
