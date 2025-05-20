@@ -1,15 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { ProjectData, SkillsData } from "../../data";
-import { Glassmorphism, ScrollReveal } from "../../components";
+import { ContentsTitle, Glassmorphism, ScrollReveal } from "../../components";
 
 const Project = () => {
   const navigate = useNavigate();
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
-      <h1 className="w-full text-7xl text-center font-bold text-white ml-8 mb-8 text-grayShadow">
-        PROJECT
-      </h1>
+      <ContentsTitle className="ml-8 mb-8">PROJECT</ContentsTitle>
 
       {ProjectData.map((project, index) => {
         const isEven = index % 2 === 0;
@@ -47,7 +45,10 @@ const Project = () => {
                       const skill = SkillsData.find((s) => s.name === name);
 
                       return skill ? (
-                        <div key={name} className="flex items-center justify-center h-12 w-12 bg-black/20 rounded-full overflow-hidden">
+                        <div
+                          key={name}
+                          className="flex items-center justify-center h-12 w-12 bg-black/20 rounded-full overflow-hidden"
+                        >
                           <img
                             key={name}
                             src={skill.src}

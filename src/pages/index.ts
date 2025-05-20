@@ -1,4 +1,5 @@
 import Home from "./Home";
+import Overview from "./Overview";
 import ProjectDetail from "./ProjectDetail";
 import NotFound from "./NotFound";
 
@@ -10,6 +11,7 @@ import Contact from "./contents/Contact";
 
 export {
   Home,
+  Overview,
   ProjectDetail,
   NotFound,
   Profile,
