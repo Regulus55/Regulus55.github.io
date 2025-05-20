@@ -1,11 +1,13 @@
 
-import { Profile, AboutMe, Skills, Project, Contact } from "./index";
+import { Profile, AboutMe, Skills, Project, Contact, ProjectDetail } from "./index";
 import { HeroSection, ParallaxWrapper, ScrollReveal } from "../components";
 import { useScrollToSection } from "../hooks/useScrollToSection";
 import SectionNavigation from "../components/SectionNavigation";
+import { useParams } from "react-router-dom";
 
 
 const Home = () => {
+  const { slug } = useParams();
   const { sectionRefs, scrollToSection } = useScrollToSection();
 
   const section = [
@@ -41,6 +43,12 @@ const Home = () => {
             ))}
           </div>
         </ParallaxWrapper>
+
+        {slug && (
+          <div className="fixed inset-0 z-48 overflow-y-auto">
+            <ProjectDetail />
+          </div>
+        )}
       </div>
     </>
   );
