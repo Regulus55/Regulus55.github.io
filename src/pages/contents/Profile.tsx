@@ -37,6 +37,7 @@ const Profile = () => {
             if (type === "url") {
               content = (
                 <a
+                  key={title}
                   href={`https://${value}`}
                   title={title}
                   target="_blank"
@@ -48,7 +49,7 @@ const Profile = () => {
               );
             } else {
               content = (
-                <button onClick={handleClick} title={title} className="hover:text-gray-200" >
+                <button key={title} onClick={handleClick} title={title} className="hover:text-gray-200" >
                   {value}
                 </button>
               );

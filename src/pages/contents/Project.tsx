@@ -56,7 +56,7 @@ const Project = () => {
                       const skill = SkillsData.find((s) => s.name === name);
 
                       return skill ? (
-                        <div className="flex items-center justify-center h-12 w-12 bg-black/20 rounded-full overflow-hidden">
+                        <div key={name} className="flex items-center justify-center h-12 w-12 bg-black/20 rounded-full overflow-hidden">
                           <img
                             key={name}
                             src={skill.src}

@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useThemeStore } from "../store/useThemeStore";
 import { Overview, Preview } from "../utils/types";
-import {AllProjectDetail} from "../data";
+import { AllProjectDetail } from "../data";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -75,7 +75,7 @@ const ProjectDetail = () => {
                         </div>
                         <ul className="text-lg">
                           {item.content?.map((element) => (
-                            <li className="flex gap-3 ml-5">
+                            <li key={element} className="flex gap-3 ml-5">
                               <span>•</span>
                               <span>{element}</span>
                             </li>
@@ -108,6 +108,7 @@ const ProjectDetail = () => {
                         <div className="mb-2">
                           {item.image?.map((element) => (
                             <img
+                              key={element}
                               src={element}
                               alt={element}
                               className="w-full h-full object-contain my-1"
@@ -116,7 +117,7 @@ const ProjectDetail = () => {
                         </div>
                         <div className="text-lg">
                           {item.content?.map((element) => (
-                            <div className="flex gap-3">{element}</div>
+                            <div key={element} className="flex gap-3">{element}</div>
                           ))}
                         </div>
                       </div>
