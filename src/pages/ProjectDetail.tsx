@@ -1,8 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useThemeStore } from "../store/useThemeStore";
-import AllProjectDetail from "../data/projectDetail";
-import { Overview, Preview, Stack } from "../utils/types";
+import { Overview, Preview } from "../utils/types";
+import {AllProjectDetail} from "../data";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();

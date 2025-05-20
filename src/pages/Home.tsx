@@ -1,14 +1,8 @@
-import ParallaxWrapper from "../components/wrapper/ParallaxWrapper";
-import ScrollReveal from "../components/wrapper/ScrollReveal";
-import AboutMe from "./contents/AboutMe";
-import Contact from "./contents/Contact";
-import Profile from "./contents/Profile";
-import Project from "./contents/Project";
-import Skills from "./contents/Skills";
-import HeroSection from "./HeroSection";
-import { SectionName, useScrollToSection } from "../hooks/useScrollToSection";
-import SectionNavigation from "./SectionNavigation";
 
+import { Profile, AboutMe, Skills, Project, Contact } from "./index";
+import { HeroSection, ParallaxWrapper, ScrollReveal } from "../components";
+import { useScrollToSection } from "../hooks/useScrollToSection";
+import SectionNavigation from "../components/SectionNavigation";
 
 
 const Home = () => {
@@ -23,30 +17,32 @@ const Home = () => {
   ];
 
   return (
-    <div className="relative w-full h-full overflow-x-hidden">
-      <div className="relative h-[100vh] z-0">
-        <HeroSection scrollToSection={scrollToSection}/>
-      </div>
-
-      <div className="fixed top-0 left-0 z-50">
-        <SectionNavigation scrollToSection={scrollToSection} />
-      </div>
-
-
-      <ParallaxWrapper>
-        <div className="flex flex-col justify-center items-center gap-40 text-white">
-          {section.map(({ id, component, direction, ref }) => (
-            <div key={id} ref={ref} className="w-full max-w-7xl">
-              <ScrollReveal
-                direction={direction as "up" | "down" | "left" | "right"}
-              >
-                {component}
-              </ScrollReveal>
-            </div>
-          ))}
+    <>
+      <div className="relative w-full h-full overflow-x-hidden">
+        <div className="relative h-[100vh] z-0">
+          <HeroSection scrollToSection={scrollToSection} />
         </div>
-      </ParallaxWrapper>
-    </div>
+
+        {/* <div className="fixed top-0 left-0 z-50">
+        <SectionNavigation scrollToSection={scrollToSection} />
+      </div> */}
+
+
+        <ParallaxWrapper>
+          <div className="flex flex-col justify-center items-center gap-40 text-white">
+            {section.map(({ id, component, direction, ref }) => (
+              <div key={id} ref={ref} className="w-full max-w-7xl">
+                <ScrollReveal
+                  direction={direction as "up" | "down" | "left" | "right"}
+                >
+                  {component}
+                </ScrollReveal>
+              </div>
+            ))}
+          </div>
+        </ParallaxWrapper>
+      </div>
+    </>
   );
 };
 

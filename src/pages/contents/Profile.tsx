@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../../data/ProfileData";
-import Glassmorphism from "../../components/wrapper/Glassmorphism";
+import { Glassmorphism } from "../../components";
 
 type IconProps = {
   size?: number;

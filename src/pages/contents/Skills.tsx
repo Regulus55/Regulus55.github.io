@@ -1,4 +1,4 @@
-import Glassmorphism from "../../components/wrapper/Glassmorphism";
+import { Glassmorphism } from "../../components";
 import { SkillsData } from "../../data";
 
 const Skills = () => {

@@ -1,9 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import Glassmorphism from "../../components/wrapper/Glassmorphism";
-import ScrollReveal from "../../components/wrapper/ScrollReveal";
 import { ProjectData, SkillsData } from "../../data";
-import { restoreScrollY, saveScrollY } from "../../utils/scroll";
+import { saveScrollY } from "../../utils/scroll";
 import { useEffect } from "react";
+import { Glassmorphism, ScrollReveal } from "../../components";
 
 const Project = () => {
   const navigate = useNavigate();

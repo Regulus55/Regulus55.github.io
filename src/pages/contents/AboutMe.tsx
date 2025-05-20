@@ -1,5 +1,4 @@
-import Glassmorphism from "../../components/wrapper/Glassmorphism";
-import ScrollReveal from "../../components/wrapper/ScrollReveal";
+import { Glassmorphism, ScrollReveal } from "../../components";
 import { AboutMeData } from "../../data";
 
 const AboutMe = () => {
