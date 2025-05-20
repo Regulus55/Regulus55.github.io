@@ -6,42 +6,13 @@ const Overview = () => {
   const { sectionRefs, scrollToSection } = useScrollToSection();
 
   const section = [
-    {
-      id: 1,
-      name: "profile",
-      component: <Profile />,
-      direction: "up",
-      ref: sectionRefs.profile,
-    },
-    {
-      id: 2,
-      name: "about",
-      component: <AboutMe />,
-      direction: "left",
-      ref: sectionRefs.about,
-    },
-    {
-      id: 3,
-      name: "skills",
-      component: <Skills />,
-      direction: "up",
-      ref: sectionRefs.skills,
-    },
-    {
-      id: 4,
-      name: "project",
-      component: <Project />,
-      direction: "down",
-      ref: sectionRefs.project,
-    },
-    {
-      id: 5,
-      name: "contact",
-      component: <Contact />,
-      direction: "up",
-      ref: sectionRefs.contact,
-    },
-  ];
+  { id: 1, name: "profile", component: <Profile />, direction: "up", ref: sectionRefs.profile },
+  { id: 2, name: "about", component: <AboutMe />, direction: "left", ref: sectionRefs.about },
+  { id: 3, name: "skills", component: <Skills />, direction: "up", ref: sectionRefs.skills },
+  { id: 4, name: "project", component: <Project />, direction: "down", ref: sectionRefs.project },
+  { id: 5, name: "contact", component: <Contact />, direction: "up", ref: sectionRefs.contact },
+];
+
   return (
     <>
       <div className="relative h-[100vh] z-0">

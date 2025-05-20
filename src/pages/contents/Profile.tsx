@@ -10,8 +10,8 @@ const Profile = () => {
       <Glassmorphism className="relative flex items-center justify-start w-auto pr-60 py-10 pl-6">
         <div className="flex items-left bg-white rounded-full ml-10 mr-20 border">
           <img
-            src="/images/내달사진.jpg"
-            alt="pic"
+            src="/images/regulus.jpg"
+            alt=""
             className="h-60 w-60 rounded-full p-4"
           />
         </div>
