@@ -1,12 +1,10 @@
-import { Glassmorphism } from "../../components";
+import { ContentsTitle, Glassmorphism } from "../../components";
 import { SkillsData } from "../../data";
 
 const Skills = () => {
   return (
     <div className="flex flex-col items-start justify-center w-full h-full p-10 rounded-3xl mt-40 mb-52">
-      <h1 className="text-7xl font-bold text-white ml-8 mb-8 text-grayShadow">
-        SKILLS
-      </h1>
+      <ContentsTitle className="ml-8 mb-8">SKILLS</ContentsTitle>
       <Glassmorphism className="flex flex-nowrap items-center justify-center w-full p-6">
         {SkillsData.slice(0, 8).map((skill, index) => (
           <div

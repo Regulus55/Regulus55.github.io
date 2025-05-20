@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useThemeStore } from "../store/useThemeStore";
 import { Overview, Preview } from "../utils/types";
 import { AllProjectDetail } from "../data";
+import { DetailTitle } from "../components";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -20,6 +21,7 @@ const ProjectDetail = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  // 디테일 페이지에서 원래페이지 스크롤 방지
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
@@ -36,7 +38,7 @@ const ProjectDetail = () => {
         className={`fixed inset-0 w-full h-full bg-cover bg-center z-0 
           ${isDayMode ? "bg-blue-sky" : "bg-orange-sky"}
         `}
-        onClick={() => navigate('/')}
+        onClick={() => navigate("/")}
       />
 
       <div className="relative xl:max-w-5xl 2xl:max-w-7xl w-full h-full min-h-screen z-10">
@@ -61,13 +63,8 @@ const ProjectDetail = () => {
               <h3 className="text-2xl font-semibold">{detail.subtitle}</h3>
             </div>
 
-            <div
-              id="overview"
-              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500"
-            >
-              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
-                Overview
-              </h2>
+            <div className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500">
+              <DetailTitle>Overview</DetailTitle>
               <div className="flex flex-col text-xl p-2 gap-6">
                 {Array.isArray(detail?.overview) &&
                   detail?.overview?.map((item: Overview, index: number) => {
@@ -90,13 +87,8 @@ const ProjectDetail = () => {
               </div>
             </div>
 
-            <div
-              id="preview"
-              className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500"
-            >
-              <h2 className="text-4xl font-bold mb-6 text-greyShadow">
-                Preview
-              </h2>
+            <div className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500">
+              <DetailTitle>Preview</DetailTitle>
               <div className="grid grid-cols-2 place-items-center items-start w-full text-xl">
                 {Array.isArray(detail?.preview) &&
                   detail?.preview?.map((item: Preview, index: number) => {
@@ -120,7 +112,9 @@ const ProjectDetail = () => {
                         </div>
                         <div className="text-lg">
                           {item.content?.map((element) => (
-                            <div key={element} className="flex gap-3">{element}</div>
+                            <div key={element} className="flex gap-3">
+                              {element}
+                            </div>
                           ))}
                         </div>
                       </div>

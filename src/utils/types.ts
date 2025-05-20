@@ -28,3 +28,8 @@ export type ReactIconProps = {
   size?: number;
   className?: string;
 };
+
+export type ContentsTitleProps = {
+  children: string;
+  className?: string;
+};

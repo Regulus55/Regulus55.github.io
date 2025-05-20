@@ -9,8 +9,8 @@ const Footer = () => {
         <img
           src={
             isDayMode
-              ? "/images/background/dayall2.png"
-              : "/images/background/sunsetall.png"
+              ? "/images/background/daysky.png"
+              : "/images/background/sunsetsky.png"
           }
           alt="cloud1"
           draggable={false}

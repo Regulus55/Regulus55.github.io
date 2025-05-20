@@ -1,17 +1,14 @@
 import React from "react";
 import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../../data";
-import { Glassmorphism } from "../../components";
+import { ContentsTitle, Glassmorphism } from "../../components";
 import { ReactIconProps } from "../../utils/types";
-
 
 const Contact = () => {
   return (
     <div className="relative flex flex-col items-center justify-center mb-96">
       <Glassmorphism className="w-auto h-full px-20 pt-12 pb-20">
-        <h1 className="text-7xl font-bold text-white mb-4 text-grayShadow">
-          CONTACT
-        </h1>
+        <ContentsTitle className="mb-4">CONTACT</ContentsTitle>
 
         {ProfileData.slice(1, 3).map(({ key, value, title }) => {
           const Icon = ProfileIcon[key] as React.ComponentType<ReactIconProps>;
@@ -27,7 +24,11 @@ const Contact = () => {
               className="flex items-center justify-center gap-2 mb-2 text-xl text-gray-600"
             >
               <Icon size={24} className="mr-4" />
-              <button onClick={handleClick} title={title} className="hover:text-gray-500">
+              <button
+                onClick={handleClick}
+                title={title}
+                className="hover:text-gray-500"
+              >
                 {value}
               </button>
             </div>
