@@ -1,5 +1,5 @@
 // contents
-import { ProfileData } from "./ProfileData";
+import { ProfileData, ProfileIcon } from "./ProfileData";
 import { AboutMeData } from "./AboutMeData";
 import { SkillsData } from "./SkillsData";
 import { ProjectData } from "./ProjectData";
@@ -13,4 +13,17 @@ export const AllProjectDetail = [PortfolioData, NarakData, GushopData];
 // floating data
 import { FloatingHomeData, FloatingIcon, projectLinks, FloatingDetailData } from "./FloatingData";
 
-export { ProfileData, AboutMeData, SkillsData, ProjectData, PortfolioData, NarakData, GushopData, FloatingHomeData, FloatingIcon, projectLinks, FloatingDetailData }
+export {
+  ProfileIcon,
+  ProfileData,
+  AboutMeData,
+  SkillsData,
+  ProjectData,
+  PortfolioData,
+  NarakData,
+  GushopData,
+  FloatingHomeData,
+  FloatingIcon,
+  projectLinks,
+  FloatingDetailData,
+};

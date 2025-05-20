@@ -1,14 +1,9 @@
-
-import { Profile, AboutMe, Skills, Project, Contact, ProjectDetail } from "./index";
-import { HeroSection, ParallaxWrapper, ScrollReveal } from "../components";
+import { HeroSection, ParallaxWrapper, ScrollReveal } from "../components"
+import { Profile, AboutMe, Skills, Project, Contact } from "./index";
 import { useScrollToSection } from "../hooks/useScrollToSection";
-import SectionNavigation from "../components/SectionNavigation";
-import { useParams } from "react-router-dom";
 
-
-const Home = () => {
-  const { slug } = useParams();
-  const { sectionRefs, scrollToSection } = useScrollToSection();
+const Overview = () => {
+    const { sectionRefs, scrollToSection } = useScrollToSection();
 
   const section = [
     { id: 1, name: "profile", component: <Profile />, direction: "up", ref: sectionRefs.profile },
@@ -17,10 +12,8 @@ const Home = () => {
     { id: 4, name: "project", component: <Project />, direction: "down", ref: sectionRefs.project },
     { id: 5, name: "contact", component: <Contact />, direction: "up", ref: sectionRefs.contact },
   ];
-
-  return (
-    <>
-      <div className="relative w-full h-full overflow-x-hidden">
+    return (
+        <div className="relative w-full h-full overflow-x-hidden">
         <div className="relative h-[100vh] z-0">
           <HeroSection scrollToSection={scrollToSection} />
         </div>
@@ -43,15 +36,8 @@ const Home = () => {
             ))}
           </div>
         </ParallaxWrapper>
-
-        {slug && (
-          <div className="fixed inset-0 z-48 overflow-y-auto">
-            <ProjectDetail />
-          </div>
-        )}
       </div>
-    </>
-  );
-};
+    )
+}
 
-export default Home;
+export default Overview

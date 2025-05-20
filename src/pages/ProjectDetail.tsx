@@ -21,7 +21,10 @@ const ProjectDetail = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, []);
 
   const detail = AllProjectDetail.find((p) => p.slug === slug);
@@ -36,8 +39,8 @@ const ProjectDetail = () => {
         onClick={() => navigate('/')}
       />
 
-      <div className="relative xl:max-w-5xl 2xl:max-w-7xl w-full min-h-screen z-10">
-        <div className="flex items-center justify-center w-full rounded-xl p-6 z-20 bg-black/50">
+      <div className="relative xl:max-w-5xl 2xl:max-w-7xl w-full h-full min-h-screen z-10">
+        <div className=" flex items-center justify-center w-full rounded-xl p-6 z-20 bg-black/50">
           <div
             onClick={(e) => e.stopPropagation()}
             className="flex flex-col items-center justify-center w-full p-8"
