@@ -23,3 +23,8 @@ export interface ProjectDetail {
   overview?: Overview[];
   preview?: Preview[];
 }
+
+export type ReactIconProps = {
+  size?: number;
+  className?: string;
+};

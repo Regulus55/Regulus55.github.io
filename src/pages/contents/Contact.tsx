@@ -1,12 +1,9 @@
 import React from "react";
 import { toast } from "react-toastify";
-import { ProfileData, ProfileIcon } from "../../data/ProfileData";
+import { ProfileData, ProfileIcon } from "../../data";
 import { Glassmorphism } from "../../components";
+import { ReactIconProps } from "../../utils/types";
 
-type IconProps = {
-  size?: number;
-  className?: string;
-};
 
 const Contact = () => {
   return (
@@ -17,7 +14,7 @@ const Contact = () => {
         </h1>
 
         {ProfileData.slice(1, 3).map(({ key, value, title }) => {
-          const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
+          const Icon = ProfileIcon[key] as React.ComponentType<ReactIconProps>;
 
           const handleClick = () => {
             navigator.clipboard.writeText(value);

@@ -1,17 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { ProjectData, SkillsData } from "../../data";
-import { saveScrollY } from "../../utils/scroll";
-import { useEffect } from "react";
 import { Glassmorphism, ScrollReveal } from "../../components";
 
 const Project = () => {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    return () => {
-      saveScrollY();
-    };
-  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
@@ -25,7 +17,6 @@ const Project = () => {
           <div
             key={index}
             onClick={() => {
-              saveScrollY();
               navigate(`/${project.slug}`);
             }}
             className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16 hover:cursor-pointer"

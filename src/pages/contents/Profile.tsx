@@ -1,11 +1,7 @@
 import { toast } from "react-toastify";
 import { ProfileData, ProfileIcon } from "../../data/ProfileData";
 import { Glassmorphism } from "../../components";
-
-type IconProps = {
-  size?: number;
-  className?: string;
-};
+import { ReactIconProps } from "../../utils/types";
 
 const Profile = () => {
   return (
@@ -23,7 +19,7 @@ const Profile = () => {
         </div>
         <div className={"flex flex-col items-left justify-center text-3xl"}>
           {ProfileData.map(({ key, title, value, type }) => {
-            const Icon = ProfileIcon[key] as React.ComponentType<IconProps>;
+            const Icon = ProfileIcon[key] as React.ComponentType<ReactIconProps>;
 
             const handleClick = () => {
               if (type === "copy") {
