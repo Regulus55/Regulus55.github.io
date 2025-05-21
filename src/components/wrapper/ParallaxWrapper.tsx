@@ -1,9 +1,11 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
+import { Parallax, useParallaxController } from "react-scroll-parallax";
 import { useThemeStore } from "../../store/useThemeStore";
 
 const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   const { isDayMode } = useThemeStore();
+  const parallaxController = useParallaxController();
+
 
   return (
     <div className="relative scrollbar-none">
@@ -15,7 +17,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
         />
       </div>
 
-      <div className="absolute left-0 right-0 z-20">
+      {/* <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none">
         <Parallax speed={40}>
           <img
             src="/images/background/star1.png"
@@ -26,16 +28,16 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
         </Parallax>
       </div>
 
-      <div className="absolute top-[150vh] left-0 right-0 z-30">
+      <div className="absolute top-0 left-0 right-0 z-30 pointer-events-none">
         <Parallax speed={-40}>
           <img
             src="/images/background/star2.png"
             alt=""
             draggable={false}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover h-[100vh]"
           />
         </Parallax>
-      </div>
+      </div> */}
 
       <div className="relative z-45">{children}</div>
     </div>
