@@ -5,7 +5,7 @@ export const GushopData: ProjectDetail = {
   title: "GU-Shop",
   subtitle: "대학생을 위한 갤럭시 제품 판매 사이트",
   period: "2024.10 ~ 2025.01",
-  image: "images/project/gushop/main.png",
+  image: "/images/project/gushop/main.png",
   overview: [
     {
       title: "프로젝트 기획 이유",
@@ -48,67 +48,67 @@ export const GushopData: ProjectDetail = {
   preview: [
     {
       title: "메인페이지",
-      image: ["images/project/gushop/home.png"],
+      image: ["/images/project/gushop/home.png"],
       content: [""],
     },
     {
       title: "네비게이션 바",
-      image: ["images/project/gushop/header.png"],
+      image: ["/images/project/gushop/header.png"],
       content: ["Headless UI 를 이용한 navbar 구현"],
     },
     {
       title: "슬라이드",
       image: [
-        "images/project/gushop/newitems2.png",
-        "images/project/gushop/swiper.gif",
+        "/images/project/gushop/newitems2.png",
+        "/images/project/gushop/swiper.gif",
       ],
       content: ["Swiper 를 이용한 슬라이드 기능"],
     },
     {
       title: "메인 이미지 슬라이드",
-      image: ["images/project/gushop/home.gif"],
+      image: ["/images/project/gushop/home.gif"],
       content: ["(드래그하여 넘기기, 자동 넘김, 순환 슬라이드)"],
     },
     {
       title: "회원가입",
       image: [
-        "images/project/gushop/signup.png",
-        "images/project/gushop/signup2.png",
+        "/images/project/gushop/signup.png",
+        "/images/project/gushop/signup2.png",
       ],
       content: ["회원가입 시 이메일 인증 기능"],
     },
     {
       title: "이메일 인증 완료 후 회원가입 가능",
-      image: ["images/project/gushop/signup3.png"],
+      image: ["/images/project/gushop/signup3.png"],
       content: [""],
     },
     {
       title: "Swagger 기반 API 연동",
       image: [
-        "images/project/gushop/api.png",
-        "images/project/gushop/api2.png",
-        "images/project/gushop/api3.png",
+        "/images/project/gushop/api.png",
+        "/images/project/gushop/api2.png",
+        "/images/project/gushop/api3.png",
       ],
       content: ["API 명세서를 기반으로 axios를 활용한 서버 통신 및 기능 구현"],
     },
     {
       title: "상품 관리 페이지",
-      image: ["images/project/gushop/productlist2.png"],
+      image: ["/images/project/gushop/productlist2.png"],
       content: ["admin page 의 제품 리스트"],
     },
     {
       title: "상품 페이지 (관리자)",
       image: [
-        "images/project/gushop/addproduct.png",
-        "images/project/gushop/editproduct.png",
+        "/images/project/gushop/addproduct.png",
+        "/images/project/gushop/editproduct.png",
       ],
       content: ["admin 계정의 제품 등록페이지와 제품 수정페이지"],
     },
     {
       title: "상품 페이지 (일반 사용자)",
       image: [
-        "images/project/gushop/shopall.png",
-        "images/project/gushop/pagination.png",
+        "/images/project/gushop/shopall.png",
+        "/images/project/gushop/pagination.png",
       ],
       content: [
         "한 페이지에 표시할 아이템 수를 설정하는 기능과 페이지네이션 구현",
@@ -116,14 +116,14 @@ export const GushopData: ProjectDetail = {
     },
     {
       title: "상품 상세페이지",
-      image: ["images/project/gushop/detail.png"],
+      image: ["/images/project/gushop/detail.png"],
       content: [""],
     },
     {
       title: "프로필 페이지",
       image: [
-        "images/project/gushop/profile.png",
-        "images/project/gushop/editmyprofile.png",
+        "/images/project/gushop/profile.png",
+        "/images/project/gushop/editmyprofile.png",
       ],
       content: ["로그인 이후 프로필 페이지에서 유저정보 확인 가능"],
     },

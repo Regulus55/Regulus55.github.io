@@ -5,7 +5,7 @@ export const PortfolioData: ProjectDetail = {
   title: "포트폴리오",
   subtitle: "웹으로 만든 내가 만든 내 세상",
   period: "2025.04 ~ 진행중",
-  image: "images/project/portfolio/main.png",
+  image: "/images/project/portfolio/main.png",
   overview: [
     {
       title: "프로젝트 기획 이유",

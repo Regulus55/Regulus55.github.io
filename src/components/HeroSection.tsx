@@ -20,7 +20,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         src={isDayMode ? "/images/background/mars.png" : "/images/background/earth.png"}
         alt="mars"
         onClick={toggleTheme}
-        className="absolute top-12 right-16 w-10 h-10 z-0 opacity-70 z-20"
+        className="absolute top-12 right-16 w-6 h-6 z-0 opacity-70 z-20"
       />
 
       <div className="relative flex items-center justify-center w-full h-full z-10">
@@ -34,7 +34,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         </div>
 
         <h1
-          className="absolute text-6xl font-bold text-white mb-60 hover:cursor-pointer z-20"
+          className="absolute text-5xl font-bold text-white mb-60 hover:cursor-pointer z-20"
           onClick={() => scrollToSection("profile")}
         >
           프론트엔드 개발자 김학준 입니다

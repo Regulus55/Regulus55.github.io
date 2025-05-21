@@ -20,7 +20,7 @@ const Project = () => {
             className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16 hover:cursor-pointer"
           >
             <ScrollReveal direction={isEven ? "left" : "right"}>
-              <Glassmorphism className="flex p-8">
+              <Glassmorphism className="flex p-8 hover:bg-white/20">
                 <img
                   src={project.image}
                   alt=""

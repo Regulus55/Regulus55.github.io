@@ -5,7 +5,7 @@ export const NarakData: ProjectDetail = {
   title: "Narak - 나락",
   subtitle: "친구들과 주식투자 연습을 위한 모의주식투자 사이트",
   period: "2024.11 ~ 진행중",
-  image: "images/project/narak/main.png",
+  image: "/images/project/narak/main.png",
   overview: [
     {
       title: "프로젝트 기획 이유",
