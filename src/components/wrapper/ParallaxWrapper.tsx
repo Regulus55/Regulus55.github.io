@@ -21,6 +21,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
             src="/images/background/star1.png"
             alt=""
             draggable={false}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </Parallax>
@@ -32,6 +33,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
             src="/images/background/star2.png"
             alt=""
             draggable={false}
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </Parallax>

@@ -57,6 +57,7 @@ const ProjectDetail = () => {
                 <img
                   src={detail.image}
                   alt={detail.title}
+                  loading="lazy"
                   className="w-full h-full"
                 />
               </div>
@@ -106,6 +107,7 @@ const ProjectDetail = () => {
                               key={element}
                               src={element}
                               alt={element}
+                              loading="lazy"
                               className="w-full h-full object-contain my-1"
                             />
                           ))}
