@@ -100,5 +100,10 @@ export const PortfolioData: ProjectDetail = {
       image: ["/images/project/portfolio/sunset.png"],
       content: [""],
     },
+    {
+      title: "디테일 페이지 프리뷰",
+      image: ["/images/project/portfolio/preview.png"],
+      content: ["시간이 없어서 사이트 방문이 힘든 분들을 위한 사진 프리뷰"],
+    },
   ],
 };
