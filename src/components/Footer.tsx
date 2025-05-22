@@ -12,9 +12,9 @@ const Footer = () => {
               ? "/images/background/daysky.png"
               : "/images/background/sunsetsky.png"
           }
-          alt="cloud1"
+          alt="ground"
           draggable={false}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover max-w-screen"
         />
       </div>
       <div className="relative z-47 flex justify-center items-end h-full pb-4">
