@@ -6,7 +6,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   const { isDayMode } = useThemeStore();
 
   return (
-    <div className="relative min-h-[150vh] overflow-hidden scrollbar-none">
+    <div className="relative min-h-[150vh] overflow-hidden">
       <div className="absolute inset-0 z-5">
         <div
           className={`w-full min-h-full 
@@ -21,7 +21,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
             src="/images/background/star1.png"
             alt=""
             draggable={false}
-            className="w-full h-full object-cover   "
+            className="w-full h-full object-cover"
           />
         </Parallax>
       </div>
@@ -32,7 +32,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
             src="/images/background/star2.png"
             alt=""
             draggable={false}
-            className="w-full h-full object-cover    bg-blue-700/20 border-4 border-blue-500 "           
+            className="w-full h-full object-cover"           
           />
            {/*    */}
         </Parallax>
