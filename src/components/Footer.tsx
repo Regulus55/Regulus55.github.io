@@ -14,6 +14,7 @@ const Footer = () => {
           }
           alt="ground"
           draggable={false}
+          loading="lazy"
           className="w-full h-full object-cover max-w-screen"
         />
       </div>

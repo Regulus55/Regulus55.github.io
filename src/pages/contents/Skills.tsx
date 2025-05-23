@@ -11,7 +11,12 @@ const Skills = () => {
             key={index}
             className="flex flex-col items-center justify-start gap-2 m-4 mt-10 w-full h-28"
           >
-            <img src={skill.src} alt={skill.alt} className="w-12 h-12" />
+            <img
+              src={skill.src}
+              alt={skill.alt}
+              loading="lazy"
+              className="w-12 h-12"
+            />
             <span className="text-lg text-center text-gray-200">
               {skill.name}
             </span>

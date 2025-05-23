@@ -12,7 +12,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
   return (
     <div className="fixed top-0 left-0 w-full h-screen">
       <img
-        src="/images/background/galaxy.png"
+        src="/images/background/galaxy.webp"
         alt="background"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
@@ -26,7 +26,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
       <div className="relative flex items-center justify-center w-full h-full z-10">
         <div className="relative flex items-center justify-center w-full h-full z-10 p-20">
           <img
-            src="/images/background/moon.png"
+            src="/images/background/moon.webp"
             alt="moon"
             onClick={() => scrollToSection("profile")}
             className="w-[650px] h-[650px] mt-2 object-contain rounded-full cursor-pointer"
