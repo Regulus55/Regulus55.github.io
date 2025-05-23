@@ -65,7 +65,7 @@ export const NarakData: ProjectDetail = {
   preview: [
     {
       title: "데스크탑 메인페이지",
-      image: ["/images/project/narak/desktopmain.webp"],
+      image: ["/images/project/narak/desktopmain.png"],
       content: [
         "Narak 은 방패에 나락 글자를 넣어 나락을 방지한다는 뜻을 가지고 있습니다",
       ],

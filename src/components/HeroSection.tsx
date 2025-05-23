@@ -17,7 +17,7 @@ const HeroSection = ({ scrollToSection }: HeroSectionProps) => {
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
       <img
-        src={isDayMode ? "/images/background/mars.png" : "/images/background/earth.png"}
+        src={isDayMode ? "/images/background/mars.webp" : "/images/background/earth.webp"}
         alt="mars"
         onClick={toggleTheme}
         className="absolute top-12 right-16 w-6 h-6 z-0 opacity-70 z-20"
