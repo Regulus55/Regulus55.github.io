@@ -22,7 +22,7 @@ const Overview = () => {
       {/* <div className="fixed top-0 left-0 z-50">
         <SectionNavigation scrollToSection={scrollToSection} />
       </div> */}
-
+<div className="h-full">
       <ParallaxWrapper>
         <div className="flex flex-col justify-center items-center gap-40 text-white">
           {section.map(({ id, component, direction, ref }) => (
@@ -36,6 +36,7 @@ const Overview = () => {
           ))}
         </div>
       </ParallaxWrapper>
+      </div>
     </>
   );
 };
