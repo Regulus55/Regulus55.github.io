@@ -6,8 +6,8 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   const { isDayMode } = useThemeStore();
 
   return (
-    <div className="relative min-h-[150vh] scrollbar-none">
-      <div className="absolute inset-0 z-5 overflow-x-hidden">
+    <div className="relative min-h-[150vh] overflow-hidden scrollbar-none">
+      <div className="absolute inset-0 z-5">
         <div
           className={`w-full min-h-full 
             ${isDayMode ? "bg-day-sky" : "bg-sunset-sky"}
