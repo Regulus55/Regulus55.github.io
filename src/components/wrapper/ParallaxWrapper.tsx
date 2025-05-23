@@ -6,8 +6,8 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   const { isDayMode } = useThemeStore();
 
   return (
-    <div className="relative min-h-screen scrollbar-none overflow-hidden">
-      <div className="absolute inset-0 z-5 overflow-x-hidden">
+    <div className="relative min-h-[150vh] overflow-hidden scrollbar-none">
+      <div className="absolute inset-0 z-5">
         <div
           className={`w-full min-h-full 
             ${isDayMode ? "bg-day-sky" : "bg-sunset-sky"}
@@ -26,8 +26,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
         </Parallax>
       </div>
 
-      <div className="absolute h-auto top-0 left-0 right-0 z-30 pointer-events-none    bg-red-700/20 border-4 border-red-500  ">
-        {/*     */}
+      <div className="absolute h-auto top-0 left-0 right-0 z-30 pointer-events-none">
         <Parallax speed={-50}>
           <img
             src="/images/background/star2.png"
