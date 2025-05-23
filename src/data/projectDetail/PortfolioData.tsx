@@ -88,11 +88,12 @@ export const PortfolioData: ProjectDetail = {
       image: ["/images/project/portfolio/contact.png"],
       content: ["맨 아래 땅 부분에 산과 구름 이미지를 배치했습니다"],
     },
-    {
+   {
       title: "프로젝트 상세페이지",
       image: ["/images/project/portfolio/detail.png"],
       content: [
-        "상세페이지에서 프로젝트의 상세 내용과 이미지를 확인할 수 있습니다",
+        "프로젝트의 상세 내용을 확인할 수 있습니다",
+        "상세페이지 바깥 배경을 클릭하면 페이지가 닫힙니다"
       ],
     },
     {
@@ -103,7 +104,7 @@ export const PortfolioData: ProjectDetail = {
     {
       title: "디테일 페이지 프리뷰",
       image: ["/images/project/portfolio/preview.png"],
-      content: ["시간이 없어서 사이트 방문이 힘든 분들을 위한 사진 프리뷰"],
+      content: ["시간이 없어서 사이트를 직접 둘러보기 어려운 분들을 위한 캡처 이미지"],
     },
   ],
 };
