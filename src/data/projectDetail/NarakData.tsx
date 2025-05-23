@@ -5,7 +5,7 @@ export const NarakData: ProjectDetail = {
   title: "Narak - 나락",
   subtitle: "친구들과 주식투자 연습을 위한 모의주식투자 사이트",
   period: "2024.11 ~ 진행중",
-  image: "/images/project/narak/main.png",
+  image: "/images/project/narak/main.webp",
   overview: [
     {
       title: "프로젝트 기획 이유",
@@ -65,7 +65,7 @@ export const NarakData: ProjectDetail = {
   preview: [
     {
       title: "데스크탑 메인페이지",
-      image: ["/images/project/narak/desktopmain.png"],
+      image: ["/images/project/narak/desktopmain.webp"],
       content: [
         "Narak 은 방패에 나락 글자를 넣어 나락을 방지한다는 뜻을 가지고 있습니다",
       ],

@@ -5,7 +5,7 @@ export const GushopData: ProjectDetail = {
   title: "GU-Shop",
   subtitle: "대학생을 위한 갤럭시 제품 판매 사이트",
   period: "2024.10 ~ 2025.01",
-  image: "/images/project/gushop/main.png",
+  image: "/images/project/gushop/main.webp",
   overview: [
     {
       title: "프로젝트 기획 이유",

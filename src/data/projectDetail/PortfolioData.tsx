@@ -5,7 +5,7 @@ export const PortfolioData: ProjectDetail = {
   title: "포트폴리오",
   subtitle: "웹으로 만든 내가 만든 내 세상",
   period: "2025.04 ~ 진행중",
-  image: "/images/project/portfolio/main.png",
+  image: "/images/project/portfolio/main.webp",
   overview: [
     {
       title: "프로젝트 기획 이유",
@@ -65,7 +65,7 @@ export const PortfolioData: ProjectDetail = {
     },
     {
       title: "메인화면",
-      image: ["/images/project/portfolio/main.png"],
+      image: ["/images/project/portfolio/main.webp"],
       content: ["사이트에 처음 접속했을 때 보이는 Hero Section입니다"],
     },
     {
@@ -99,6 +99,11 @@ export const PortfolioData: ProjectDetail = {
       title: "저녁하늘배경",
       image: ["/images/project/portfolio/sunset.png"],
       content: [""],
+    },
+    {
+      title: "디테일 페이지 프리뷰",
+      image: ["/images/project/portfolio/preview.png"],
+      content: ["시간이 없어서 사이트 방문이 힘든 분들을 위한 사진 프리뷰"],
     },
   ],
 };

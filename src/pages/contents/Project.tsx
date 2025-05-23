@@ -24,6 +24,7 @@ const Project = () => {
                 <img
                   src={project.image}
                   alt=""
+                  loading="lazy"
                   className="w-60 h-60 object-cover rounded-xl"
                 />
                 <div className="flex flex-col ml-8 p-2">
@@ -54,6 +55,7 @@ const Project = () => {
                             src={skill.src}
                             alt={skill.alt}
                             title={name}
+                            loading="lazy"
                             className="h-10 w-10 object-contain"
                           />
                         </div>
