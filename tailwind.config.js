@@ -28,23 +28,25 @@ module.exports = {
         "day-sky": `linear-gradient(
           to bottom,
           #020202 0%,
-          #010037 4%,    
+          #010037 10%,    
           #0D0C59 20%,  
-          #201E8D 36%,
-          #3863DA 52%,
-          #73AEE2 68%,
-          #AFD9FF 84%,
-          #DBEEFF 100%
+          #201E8D 35%,
+          #3863DA 50%,
+          #73AEE2 65%,
+          #AFD9FF 75%,
+          #DBEEFF 85%,
+          #FFFFFF 100%
         )`,
         "sunset-sky": `linear-gradient(
           to bottom,
           #020202 0%,
-          #010037 4%,
+          #010037 10%,
           #43387A 20%,
-          #6A4D88 36%, 
-          #A55C78 52%, 
-          #D67A5A 68%,
-          #FFA170 84%,
+          #6A4D88 35%, 
+          #A55C78 50%, 
+          #BE6B69 65%,
+          #D67A5A 75%,
+          #FFA170 85%,
           #FFE4C4 100%
         )`,
 
