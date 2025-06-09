@@ -8,7 +8,6 @@ const Project = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-20 lg:mb-80">
       <ContentsTitle className="mb-4 lg:mb-8">PROJECT</ContentsTitle>
-
       {ProjectData.map((project, index) => {
         const isEven = index % 2 === 0;
         return (
