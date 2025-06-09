@@ -7,7 +7,7 @@ const Project = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
-      <ContentsTitle className="ml-8 mb-8">PROJECT</ContentsTitle>
+      <ContentsTitle className="mb-4 lg:mb-8">PROJECT</ContentsTitle>
 
       {ProjectData.map((project, index) => {
         const isEven = index % 2 === 0;
@@ -20,17 +20,17 @@ const Project = () => {
             className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16 hover:cursor-pointer"
           >
             <ScrollReveal direction={isEven ? "left" : "right"}>
-              <Glassmorphism className="flex p-8 hover:bg-white/20">
+              <Glassmorphism className="flex flex-col md:flex-row items-center p-4 md:p-8 hover:bg-white/20">
                 <img
                   src={project.image}
                   alt=""
                   loading="lazy"
-                  className="w-60 h-60 object-cover rounded-xl"
+                  className="w-auto h-48 md:w-60 md:h-60 overflow-hidden md:object-cover rounded-xl"
                 />
-                <div className="flex flex-col ml-8 p-2">
-                  <div className="flex items-center justify-between">
-                    <h2 className="text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-600 text-lg font-bold">
+                <div className="flex flex-col items-center md:ml-8 p-2">
+                  <div className="flex flex-col md:flex-row items-center justify-between">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">{project.title}</h2>
+                    <div className="text-gray-600 text-md lg:text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
@@ -38,7 +38,7 @@ const Project = () => {
                     {project.period}
                   </div>
 
-                  <div className="text-lg text-gray-700 font-semibold">
+                  <div className="text-sm md:text-lg text-gray-700 font-semibold">
                     {project.content}
                   </div>
                   <div className="flex mt-4 gap-2">

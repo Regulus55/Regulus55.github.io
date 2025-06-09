@@ -3,10 +3,10 @@ import { AboutMeData } from "../../data";
 
 const AboutMe = () => {
   return (
-    <div className={`relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-4 rounded-3xl mt-100
-                     sm:p-6 lg:p-10
+    <div className={`relative flex flex-col items-start justify-center w-full h-full max-w-7xl p-6 rounded-3xl mt-100
+                     lg:p-10
     `}>
-      <ContentsTitle className="ml-4 mb-2 sm:ml-8 sm:mb-4">ABOUT ME</ContentsTitle>
+      <ContentsTitle className="ml-4 mb-4 sm:ml-8">ABOUT ME</ContentsTitle>
       <div className="flex items-center justify-start w-auto">
         <div className={"flex flex-col align-center justify-center gap-6 mg:gap-10"}>
           {AboutMeData.map((data, index) => (
