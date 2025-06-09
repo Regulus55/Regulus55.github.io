@@ -5,7 +5,7 @@ import { ReactIconProps } from "../../utils/types";
 
 const Profile = () => {
   return (
-    <div className="relative flex flex-col items-center lg:items-start justify-center w-full h-full max-w-7xl p-6 rounded-3xl mt-52 mb-40">
+    <div className="relative flex flex-col items-center lg:items-start justify-center w-full h-full max-w-7xl p-6 rounded-3xl my-20 lg:mt-52 lg:mb-40">
       <div className="items-start">
         <ContentsTitle className="ml-3 sm:ml-6 mb-6">PROFILE</ContentsTitle>
         <Glassmorphism

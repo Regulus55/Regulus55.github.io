@@ -6,9 +6,8 @@ const Project = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
+    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-20 lg:mb-80">
       <ContentsTitle className="mb-4 lg:mb-8">PROJECT</ContentsTitle>
-
       {ProjectData.map((project, index) => {
         const isEven = index % 2 === 0;
         return (
@@ -34,8 +33,8 @@ const Project = () => {
 
                 <div className="flex flex-col items-between md:ml-8 p-2">
                   <div className="flex flex-col md:flex-row items-center justify-between">
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-600 text-sm lg:text-lg font-bold">
+                    <h2 className="text-2xl lg:text-3xl font-bold">{project.title}</h2>
+                    <div className="text-gray-600 text-md lg:text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
@@ -43,7 +42,7 @@ const Project = () => {
                     {project.period}
                   </div>
 
-                  <div className="text-xs md:text-lg text-gray-700 font-semibold">
+                  <div className="text-md md:text-lg text-gray-700 font-semibold">
                     {project.content}
                   </div>
                   <div className="flex mt-4 gap-2">
