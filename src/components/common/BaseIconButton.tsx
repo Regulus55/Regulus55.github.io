@@ -13,8 +13,8 @@ const BaseIconButton = ({
   children,
   title,
 }: BaseIconButtonProps) => {
-  const commonClass =`w-8 h-8 rounded-full flex items-center justify-center shadow-xl bg-white border-2 border-gray-700 hover:scale-105
-                      md:w-10 md:h-10 md:border-4
+  const commonClass =`w-10 h-10 rounded-full flex items-center justify-center shadow-xl bg-white border-2 border-gray-700 hover:scale-105
+                      md:border-4
                       xl:w-12 xl:h-12
                   `
 

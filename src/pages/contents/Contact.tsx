@@ -6,7 +6,7 @@ import { ReactIconProps } from "../../utils/types";
 
 const Contact = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center px-10 mb-96">
+    <div className="relative flex flex-col items-center justify-center px-10 mb-60 lg:mb-96">
       <Glassmorphism className="w-auto h-full px-10 lg:px-20 pt-12 pb-10 lg:pb-20">
         <ContentsTitle className="mb-4">CONTACT</ContentsTitle>
 

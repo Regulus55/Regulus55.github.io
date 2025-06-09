@@ -3,7 +3,7 @@ import { SkillsData } from "../../data";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-start justify-center w-full h-full p-10 rounded-3xl mt-40 mb-52">
+    <div className="flex flex-col items-start justify-center w-full h-full p-10 rounded-3xl my-20 lg:mt-40 lg:mb-52">
       <ContentsTitle className="ml-4 mb-4 lg:ml-8 lg:mb-8">SKILLS</ContentsTitle>
       <Glassmorphism className="flex items-center justify-center flex-wrap gap-6 w-full p-3 sm:p-4 lg:p-6">
         {SkillsData.slice(0, 6).map((skill, index) => (
