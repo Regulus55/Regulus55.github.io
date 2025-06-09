@@ -18,7 +18,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
       <div className="absolute h-auto top-0 left-0 right-0 z-20 pointer-events-none">
         <Parallax speed={50}>
           <img
-            src="/images/background/star1.png"
+            src="/images/background/star44.png"
             alt=""
             draggable={false}
             className="w-full h-full object-cover"
@@ -29,7 +29,7 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
       <div className="absolute h-auto top-0 left-0 right-0 z-20 pointer-events-none">
         <Parallax speed={-50}>
           <img
-            src="/images/background/star2.png"
+            src="/images/background/star33.png"
             alt=""
             draggable={false}
             className="w-full h-full object-cover"           
