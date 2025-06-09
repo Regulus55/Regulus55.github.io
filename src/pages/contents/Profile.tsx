@@ -70,7 +70,7 @@ const Profile = () => {
               return (
                 <div
                   key={key}
-                  className={`flex items-center  sm:gap-2 mb-3 sm:mb-2 text-white text-xl
+                  className={`flex items-center sm:gap-2 mb-3 sm:mb-2 text-white text-xl
                             sm:text-2xl lg:text-3xl
                   `}
                 >

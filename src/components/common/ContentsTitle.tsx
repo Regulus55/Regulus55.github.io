@@ -4,7 +4,7 @@ import { ContentsTitleProps } from "../../utils/types";
 const ContentsTitle = ({ children, className }: ContentsTitleProps) => {
   return (
     <h1
-      className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-grayShadow ${className}`}
+      className={`text-5xl lg:text-6xl xl:text-7xl font-bold text-white text-grayShadow ${className}`}
     >
       {children}
     </h1>

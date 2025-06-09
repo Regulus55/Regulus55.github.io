@@ -21,24 +21,29 @@ const Project = () => {
           >
             <ScrollReveal direction={isEven ? "left" : "right"}>
               <Glassmorphism className="flex flex-col md:flex-row items-center p-4 md:p-8 hover:bg-white/20">
-                <img
-                  src={project.image}
-                  alt=""
-                  loading="lazy"
-                  className="w-auto h-48 md:w-60 md:h-60 overflow-hidden md:object-cover rounded-xl"
-                />
-                <div className="flex flex-col items-center md:ml-8 p-2">
+                <div className={`overflow-hidden w-auto h-48
+                                 lg:overflow-visible md:w-96 
+                  `}>
+                  <img
+                    src={project.image}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+
+                <div className="flex flex-col items-between md:ml-8 p-2">
                   <div className="flex flex-col md:flex-row items-center justify-between">
                     <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-600 text-md lg:text-lg font-bold">
+                    <div className="text-gray-600 text-sm lg:text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
-                  <div className="text-gray-500 text-md font-bold mb-2">
+                  <div className="text-gray-500 text-center md:text-end text-sm md:text-md font-bold mb-2">
                     {project.period}
                   </div>
 
-                  <div className="text-sm md:text-lg text-gray-700 font-semibold">
+                  <div className="text-xs md:text-lg text-gray-700 font-semibold">
                     {project.content}
                   </div>
                   <div className="flex mt-4 gap-2">
