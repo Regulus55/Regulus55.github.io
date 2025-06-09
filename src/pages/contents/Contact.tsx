@@ -6,8 +6,8 @@ import { ReactIconProps } from "../../utils/types";
 
 const Contact = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center mb-96">
-      <Glassmorphism className="w-auto h-full px-20 pt-12 pb-20">
+    <div className="relative flex flex-col items-center justify-center px-10 mb-96">
+      <Glassmorphism className="w-auto h-full px-10 lg:px-20 pt-12 pb-10 lg:pb-20">
         <ContentsTitle className="mb-4">CONTACT</ContentsTitle>
 
         {ProfileData.slice(1, 3).map(({ key, value, title }) => {
@@ -21,9 +21,9 @@ const Contact = () => {
           return (
             <div
               key={key}
-              className="flex items-center justify-center gap-2 mb-2 text-xl text-gray-600"
+              className="flex items-center justify-center gap-2 mb-2 text-lg lg:text-2xl text-gray-600"
             >
-              <Icon size={24} className="mr-4" />
+              <Icon className="w-4 h-4 mr-2 lg:w-6 lg:h-6 lg:mr-4" />
               <button
                 onClick={handleClick}
                 title={title}
