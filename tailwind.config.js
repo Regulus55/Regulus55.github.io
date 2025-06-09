@@ -27,15 +27,13 @@ module.exports = {
       backgroundImage: {
         "day-sky": `linear-gradient(
           to bottom,
-          #020202 0%,
-          #010037 10%,    
-          #0D0C59 20%,  
-          #201E8D 35%,
-          #3863DA 50%,
-          #73AEE2 65%,
-          #AFD9FF 75%,
-          #DBEEFF 85%,
-          #FFFFFF 100%
+          #010037 0%,    
+          #0D0C59 17%,  
+          #201E8D 34%,
+          #3863DA 51%,
+          #73AEE2 68%,
+          #AFD9FF 85%,
+          #DBEEFF 100%
         )`,
         "sunset-sky": `linear-gradient(
           to bottom,

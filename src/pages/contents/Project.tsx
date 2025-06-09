@@ -6,9 +6,8 @@ const Project = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-80">
-      <ContentsTitle className="ml-8 mb-8">PROJECT</ContentsTitle>
-
+    <div className="flex flex-col items-center justify-center w-full h-full p-10 mb-20 lg:mb-80">
+      <ContentsTitle className="mb-4 lg:mb-8">PROJECT</ContentsTitle>
       {ProjectData.map((project, index) => {
         const isEven = index % 2 === 0;
         return (
@@ -20,25 +19,30 @@ const Project = () => {
             className="relative items-center justify-center flex flex-col w-full max-w-4xl mb-16 hover:cursor-pointer"
           >
             <ScrollReveal direction={isEven ? "left" : "right"}>
-              <Glassmorphism className="flex p-8 hover:bg-white/20">
-                <img
-                  src={project.image}
-                  alt=""
-                  loading="lazy"
-                  className="w-60 h-60 object-cover rounded-xl"
-                />
-                <div className="flex flex-col ml-8 p-2">
-                  <div className="flex items-center justify-between">
-                    <h2 className="text-3xl font-bold">{project.title}</h2>
-                    <div className="text-gray-600 text-lg font-bold">
+              <Glassmorphism className="flex flex-col md:flex-row items-center p-4 md:p-8 hover:bg-white/20">
+                <div className={`overflow-hidden w-auto h-48
+                                 lg:overflow-visible md:w-96 
+                  `}>
+                  <img
+                    src={project.image}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+
+                <div className="flex flex-col items-between md:ml-8 p-2">
+                  <div className="flex flex-col md:flex-row items-center justify-between">
+                    <h2 className="text-2xl lg:text-3xl font-bold">{project.title}</h2>
+                    <div className="text-gray-600 text-md lg:text-lg font-bold">
                       {project.subtitle}
                     </div>
                   </div>
-                  <div className="text-gray-500 text-md font-bold mb-2">
+                  <div className="text-gray-500 text-center md:text-end text-sm md:text-md font-bold mb-2">
                     {project.period}
                   </div>
 
-                  <div className="text-lg text-gray-700 font-semibold">
+                  <div className="text-md md:text-lg text-gray-700 font-semibold">
                     {project.content}
                   </div>
                   <div className="flex mt-4 gap-2">

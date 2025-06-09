@@ -15,7 +15,7 @@ const FloatingButton = () => {
   return (
     <div
       className={`fixed flex flex-col z-48 gap-3
-      ${pathname === "/" ? "bottom-8 right-6" : "top-20 right-6"}
+      ${pathname === "/" ? "bottom-8 right-6" : "top-4 right-2 md:top-20 md:right-6"}
     `}
     >
       {floatingData.map(({ key, value, title, type }) => {
@@ -33,7 +33,7 @@ const FloatingButton = () => {
 
         return (
           <BaseIconButton key={key} title={title} {...props}>
-            <Icon size={24} />
+            <Icon className="w-4 h-4 md:w-5 md:h-5 xl:w-6 xl:h-6" />
           </BaseIconButton>
         );
       })}

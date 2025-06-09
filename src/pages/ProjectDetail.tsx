@@ -51,8 +51,8 @@ const ProjectDetail = () => {
               id="title"
               className="relative flex flex-col items-center justify-center max-w-3xl w-full mb-8"
             >
-              <h1 className="text-4xl text-white font-bold">{detail.title}</h1>
-              <p className="text-md mb-4 text-gray-300">{detail.period}</p>
+              <h1 className="text-3xl lg:text-4xl text-white font-bold">{detail.title}</h1>
+              <p className="text-sm lg:text-base mb-4 text-gray-300">{detail.period}</p>
               <div className="max-w-xl w-full h-auto overflow-hidden rounded-md mb-6">
                 <img
                   src={detail.image}
@@ -61,7 +61,7 @@ const ProjectDetail = () => {
                   className="w-full h-full"
                 />
               </div>
-              <h3 className="text-2xl font-semibold">{detail.subtitle}</h3>
+              <h3 className="text-xl lg:text-2xl font-semibold">{detail.subtitle}</h3>
             </div>
 
             <div className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 border-t-2 border-gray-500">
@@ -71,10 +71,10 @@ const ProjectDetail = () => {
                   detail?.overview?.map((item: Overview, index: number) => {
                     return (
                       <div key={index}>
-                        <div className="text-xl font-bold mb-1">
+                        <div className="text-lg lg:text-xl font-bold mb-1">
                           {index + 1}. {item.title}
                         </div>
-                        <ul className="text-lg">
+                        <ul className="text-base lg:text-lg">
                           {item.content?.map((element) => (
                             <li key={element} className="flex gap-3 ml-5">
                               <span>•</span>
@@ -90,13 +90,13 @@ const ProjectDetail = () => {
 
             <div className="relative flex flex-col items-start justify-center max-w-4xl w-full pt-10 mt-10 border-t-2 border-gray-500">
               <DetailTitle>Preview</DetailTitle>
-              <div className="grid grid-cols-2 place-items-center items-start w-full text-xl">
+              <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center items-start w-full text-xl">
                 {Array.isArray(detail?.preview) &&
                   detail?.preview?.map((item: Preview, index: number) => {
                     return (
                       <div
                         key={index}
-                        className="flex flex-col items-center justify-center w-96 mb-10"
+                        className="flex flex-col items-center justify-center w-auto lg:w-96 mb-10"
                       >
                         <div className="text-xl font-bold mb-1">
                           {item.title}
@@ -112,7 +112,7 @@ const ProjectDetail = () => {
                             />
                           ))}
                         </div>
-                        <div className="text-lg">
+                        <div className="text-base lg:text-lg">
                           {item.content?.map((element) => (
                             <div key={element} className="flex gap-3">
                               {element}
